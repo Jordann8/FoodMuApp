@@ -21,33 +21,6 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        lateinit var rvKategori: RecyclerView
-
-        rvKategori(findViewById(R.id.rv_kategori))
-        rvRestaurant(findViewById(R.id.rv_restoran))
-        rvMakanan(findViewById(R.id.rv_food))
-
-        InitReyclerViewKategori()
-        //InitReyclerViewRestaurant()
-        //InitReyclerViewMakanan()
-
     }
 
-    private fun InitReyclerViewKategori() {
-        val list: ArrayList<KategoriModel> = arrayListOf()
-    }
-
-
-    }
-
-    private fun rvMakanan(findViewById: Any) {
-        TODO("Not yet implemented")
-    }
-
-    private fun rvRestaurant(findViewById: Any) {
-        TODO("Not yet implemented")
-    }
-
-    private fun rvKategori(findViewById: Any) {
-        TODO("Not yet implemented")
-    }
+}
