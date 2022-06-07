@@ -7,6 +7,8 @@ import android.widget.Toast
 import com.example.foodmuapp.databinding.ActivityLoginBinding
 import com.example.foodmuapp.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
+import android.text.TextWatcher
+
 
 class LoginActivity : AppCompatActivity() {
 
@@ -27,6 +29,7 @@ class LoginActivity : AppCompatActivity() {
 
 
 
+
         binding.btRegister.setOnClickListener() {
             val goToRegister = Intent(this, RegisterActivity::class.java)
             startActivity(goToRegister)}
@@ -37,6 +40,7 @@ class LoginActivity : AppCompatActivity() {
 
                 if (etEmail.isNullOrEmpty() && etPassword.isNullOrEmpty()){
                     Toast.makeText(this, "Please fill in the required fields", Toast.LENGTH_SHORT).show()
+
                 }
 
                 else{
@@ -55,6 +59,7 @@ class LoginActivity : AppCompatActivity() {
                 }
 
                     }
+
 
 
             }

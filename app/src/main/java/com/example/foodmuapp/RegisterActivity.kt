@@ -25,6 +25,11 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
 
+        binding.tbRegister.setNavigationOnClickListener {
+            val goToLogin = Intent(this, LoginActivity::class.java)
+            startActivity(goToLogin)
+        }
+
 
         binding.btRegister.setOnClickListener{
             //variable yang udah di set untuk jadi string (sama aja jangan di ganti2 ^^) -Ajriel
@@ -32,6 +37,7 @@ class RegisterActivity : AppCompatActivity() {
              val etPassword = binding.etPassword.text.toString()
              val etNomor = binding.etPhonenumber.text.toString()
              val etUsername = binding.etUsername.text.toString()
+             val cbTAC = binding.checkBox1
 
 
             if (etEmail.isNullOrEmpty() && etPassword.isNullOrEmpty() && etNomor.isNullOrEmpty() && etUsername.isNullOrEmpty() ){
@@ -43,18 +49,22 @@ class RegisterActivity : AppCompatActivity() {
 
                 firebaseAuth.createUserWithEmailAndPassword(etEmail, etPassword).addOnCompleteListener{
                    if(it.isSuccessful){
-                       val goToHome = Intent(this, HomeActivity::class.java)
-                       startActivity(goToHome)
+                           val goToHome = Intent(this, HomeActivity::class.java)
+                           startActivity(goToHome)}
+                       }
+                      
                    }
 
                    if (etPassword.length < 6 ){
                        Toast.makeText(this, "Please use the minimum 6 characters in your password", Toast.LENGTH_SHORT).show()
+
                    }
-                  
+
+
+                 if (!cbTAC.isChecked)
+                     Toast.makeText(this, "Please agree to our terms and condition", Toast.LENGTH_SHORT).show()
                 }
             }
 
         }
-    }
 
-}
