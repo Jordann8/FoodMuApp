@@ -121,5 +121,18 @@
         app:layout_constraintTop_toBottomOf="@+id/rating_bar"
         android:layout_marginTop="15dp" />
 
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_keranjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_keranjang_btn"
+        android:elevation="15dp"
+        android:src="@drawable/keranjang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi_product" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
