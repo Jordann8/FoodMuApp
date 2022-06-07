@@ -10,10 +10,7 @@ import com.google.firebase.auth.FirebaseAuth
 
 class RegisterActivity : AppCompatActivity() {
 
-
-
-
-    //Tempat variable jangan di ganti2 yaa ^^ -Ajriel
+    //Tempat variable jangan di ganti2 yaa ^^ -Ajriel {
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var firebaseAuth: FirebaseAuth
 
@@ -25,11 +22,14 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
 
+        //Tombol back yang redirect ke login page{
+
         binding.tbRegister.setNavigationOnClickListener {
             val goToLogin = Intent(this, LoginActivity::class.java)
             startActivity(goToLogin)
         }
 
+        //Coding firebase dan verifikasi form register
 
         binding.btRegister.setOnClickListener{
             //variable yang udah di set untuk jadi string (sama aja jangan di ganti2 ^^) -Ajriel
@@ -46,7 +46,7 @@ class RegisterActivity : AppCompatActivity() {
 
             else{
 
-
+                //authentikasi firebase
                 firebaseAuth.createUserWithEmailAndPassword(etEmail, etPassword).addOnCompleteListener{
                    if(it.isSuccessful){
                            val goToHome = Intent(this, HomeActivity::class.java)
