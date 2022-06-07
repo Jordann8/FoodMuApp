@@ -1,5 +1,6 @@
 package com.example.foodmuapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -23,8 +24,9 @@ class LoginActivity : AppCompatActivity() {
             else {
 
                 if (binding.etUsername.text.toString() == "admin" && binding.etPassword.text.toString() == "admin"){
-                    Toast.makeText(this, "bener banget bang", Toast.LENGTH_SHORT).show()
-                    
+                 val intent = Intent(this, HomeActivity::class.java)
+                    startActivity(intent)
+
                 }
                 
                 else{
