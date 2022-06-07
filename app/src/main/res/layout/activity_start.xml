@@ -21,7 +21,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/tv_acc_created"
         android:fontFamily="@font/poppins_semi_bold"
-        android:text="@string/acc_created"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +31,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_medium"
-        android:text="@string/acc_created_notif"
         android:textColor="@color/grey"
         android:textSize="15sp"
         android:gravity="center_horizontal"
@@ -51,7 +49,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_acc_created_notif"
-        android:text="@string/start_button"
         android:textColor="@color/black"
         android:fontFamily="@font/poppins_semi_bold"
         android:textSize="18sp"/>
