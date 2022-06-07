@@ -7,7 +7,9 @@
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMu2/app/src/main/res/layout/activity_login.xml" value="0.17708333333333334" />
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMu2/app/src/main/res/layout/activity_start.xml" value="0.2" />
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/drawable/bg_button_circle.xml" value="0.128" />
+        <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/drawable/bg_keranjang_btn.xml" value="0.2015" />
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/drawable/bg_product.xml" value="0.1545" />
+        <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/drawable/bg_restaurant.xml" value="0.157" />
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/drawable/facebookbutton.xml" value="0.1545" />
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/drawable/googlebutton.xml" value="0.1545" />
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/drawable/header.xml" value="0.1545" />
@@ -16,7 +18,7 @@
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/layout/activity_google_login.xml" value="0.17708333333333334" />
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/layout/activity_history.xml" value="0.2296875" />
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/layout/activity_product.xml" value="0.264" />
+        <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/layout/activity_product.xml" value="0.2" />
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/Legion/AndroidStudioProjects/FoodMuAppReal/app/src/main/res/layout/activity_start.xml" value="0.2296875" />
