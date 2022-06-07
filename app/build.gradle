@@ -9,6 +9,7 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
+
     defaultConfig {
         applicationId "com.example.foodmuapp"
         minSdkVersion 22
@@ -55,4 +56,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     implementation 'com.google.firebase:firebase-auth:21.0.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'}
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+
+
+
+}
