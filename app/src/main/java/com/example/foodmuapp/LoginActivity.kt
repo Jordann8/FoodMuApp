@@ -5,48 +5,62 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.foodmuapp.databinding.ActivityLoginBinding
+import com.example.foodmuapp.databinding.ActivityRegisterBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
 
 
+
+
+    //Tempat variable jangan di ganti2 yaa ^^ -Ajriel
     private lateinit var binding: ActivityLoginBinding
+    private lateinit var firebaseAuth: FirebaseAuth
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.btLogin.setOnClickListener(){
-            if (binding.etUsername.text.isNullOrEmpty() && binding.etPassword.text.isNullOrEmpty()){
-                Toast.makeText(this, "Please fill out the required form", Toast.LENGTH_SHORT).show()
 
-            }
 
-            else {
+        binding.btRegister.setOnClickListener() {
+            val goToRegister = Intent(this, RegisterActivity::class.java)
+            startActivity(goToRegister)}
 
-                if (binding.etUsername.text.toString() == "admin" && binding.etPassword.text.toString() == "admin"){
-                 val goToHome = Intent(this, HomeActivity::class.java)
-                    startActivity(goToHome)
+            binding.btLogin.setOnClickListener() {
+                val etEmail = binding.etUsername.text.toString()
+                val etPassword = binding.etPassword.text.toString()
 
+                if (etEmail.isNullOrEmpty() && etPassword.isNullOrEmpty()){
+                    Toast.makeText(this, "Please fill in the required fields", Toast.LENGTH_SHORT).show()
                 }
-                
+
                 else{
-                    Toast.makeText(this, "salah woi", Toast.LENGTH_SHORT).show()
+
+                firebaseAuth.signInWithEmailAndPassword(etEmail, etPassword).addOnCompleteListener(){
+                    if (it.isSuccessful){
+                        val goToHome = Intent(this, HomeActivity::class.java)
+                        startActivity(goToHome)
+                    }
                     
+                    else{
+                        Toast.makeText(this, "Incorrect username or password", Toast.LENGTH_SHORT).show()
+                    }
+
+
                 }
+
+                    }
+
+
             }
-            binding.btRegister.setOnClickListener(){
-                val goToRegister = Intent(this, RegisterActivity::class.java)
-                startActivity(goToRegister)
-            }
+
+
+        }}
 
 
 
-        }
-
-
-
-
-
-    }
-}

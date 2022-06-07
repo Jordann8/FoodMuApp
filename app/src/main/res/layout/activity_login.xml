@@ -59,7 +59,7 @@
             app:layout_constraintEnd_toEndOf="@id/iv_strip"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/bt_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
