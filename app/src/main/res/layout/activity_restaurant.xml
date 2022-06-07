@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RestaurantActivity">
+    tools:context=".RestaurantActivity"
+    android:background="@drawable/screen"
+    >
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/header"
@@ -143,6 +145,53 @@
             android:paddingTop="25dp"
             android:layout_marginRight="30dp"
             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_desc_restaurant"
+            android:layout_marginTop="50sp"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="16sp"
+            android:paddingRight="80sp"
+            android:text="Classic fast food chain, famous for hamburgers, potatoes &amp; ice cream" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_desc_restaurant"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="25dp"
+                android:backgroundTint="@color/primary"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="13dp"
+                app:icon="@drawable/ic_bagi"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconTint="@color/black" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:background="@drawable/main_button"
+                android:text="See the menu"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+
+                />
+
+        </LinearLayout>
 
 
 

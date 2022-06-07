@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HistoryActivity"
-    android:background="@drawable/screen"
-
-    >
+    android:background="@drawable/screen">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_marginTop="30dp"
@@ -34,7 +32,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textHistory"
+        android:id="@+id/text_history"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/event_no_history"
@@ -50,14 +48,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/event_no_history_desc"
-        app:layout_constraintTop_toBottomOf="@id/textHistory"
+        app:layout_constraintTop_toBottomOf="@id/text_history"
         android:fontFamily="@font/poppins_regular"
         android:textSize="14sp"
         android:gravity="center_horizontal"
         android:paddingStart="50dp"
         android:paddingEnd="50dp"
-        app:layout_constraintLeft_toLeftOf="@id/textHistory"
-        app:layout_constraintRight_toRightOf="@id/textHistory"
-        />
+        app:layout_constraintLeft_toLeftOf="@id/text_history"
+        app:layout_constraintRight_toRightOf="@id/text_history" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
