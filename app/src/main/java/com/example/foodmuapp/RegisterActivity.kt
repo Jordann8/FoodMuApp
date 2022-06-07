@@ -10,11 +10,6 @@ import com.google.firebase.auth.FirebaseAuth
 
 class RegisterActivity : AppCompatActivity() {
 
-    fun Register(){
-        val goToRegister = Intent(this, RegisterActivity::class.java)
-        startActivity(goToRegister)
-    }
-
 
 
 
@@ -28,8 +23,8 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         firebaseAuth = FirebaseAuth.getInstance()
+
 
         binding.btRegister.setOnClickListener{
             //variable yang udah di set untuk jadi string (sama aja jangan di ganti2 ^^) -Ajriel
@@ -40,11 +35,13 @@ class RegisterActivity : AppCompatActivity() {
 
 
             if (etEmail.isNullOrEmpty() && etPassword.isNullOrEmpty() && etNomor.isNullOrEmpty() && etUsername.isNullOrEmpty() ){
-                Toast.makeText(this, "Please fill in the required field", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please fill in the required fields", Toast.LENGTH_SHORT).show()
             }
 
             else{
-               firebaseAuth.createUserWithEmailAndPassword(etEmail, etPassword).addOnCompleteListener{
+
+
+                firebaseAuth.createUserWithEmailAndPassword(etEmail, etPassword).addOnCompleteListener{
                    if(it.isSuccessful){
                        val goToHome = Intent(this, HomeActivity::class.java)
                        startActivity(goToHome)

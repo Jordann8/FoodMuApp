@@ -23,7 +23,6 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         firebaseAuth = FirebaseAuth.getInstance()
 
 
@@ -37,13 +36,15 @@ class LoginActivity : AppCompatActivity() {
                 val etPassword = binding.etPassword.text.toString()
 
                 if (etEmail.isNullOrEmpty() && etPassword.isNullOrEmpty()){
-                    Toast.makeText(this, "null", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Please fill in the required fields", Toast.LENGTH_SHORT).show()
                 }
+
+                else{
 
                 firebaseAuth.signInWithEmailAndPassword(etEmail, etPassword).addOnCompleteListener(){
                     if (it.isSuccessful){
                         val goToHome = Intent(this, HomeActivity::class.java)
-                        startActivity(goToHome )
+                        startActivity(goToHome)
                     }
                     
                     else{
@@ -59,7 +60,7 @@ class LoginActivity : AppCompatActivity() {
             }
 
 
-        }
+        }}
 
 
 
