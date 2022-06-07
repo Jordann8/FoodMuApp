@@ -20,6 +20,19 @@ class LoginActivity : AppCompatActivity() {
 
             }
 
+            else {
+
+                if (binding.etUsername.text.toString() == "admin" && binding.etPassword.text.toString() == "admin"){
+                    Toast.makeText(this, "bener banget bang", Toast.LENGTH_SHORT).show()
+                    
+                }
+                
+                else{
+                    Toast.makeText(this, "salah woi", Toast.LENGTH_SHORT).show()
+                    
+                }
+            }
+
         }
 
 
