@@ -2,4 +2,8 @@
     <string name="app_name">FoodMuApp</string>
     <string name="event_no_history">No history yet</string>
     <string name="event_no_history_desc">oopps!, you haven\'t ordered anything yet hit the back button above to start ordering a food</string>
+    <string name="acc_created">Acount created!</string>
+    <string name="acc_created_notif">your account has been created!, press the button below to start ordering food</string>
+    <string name="start_button">Start Ordering</string>
+
 </resources>

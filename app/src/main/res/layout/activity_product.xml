@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    tools:context=".ProductActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bg_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mcflurry"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/mcflurry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_button_circle"
+        android:elevation="10dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:id="@+id/btn_favorite"
+        android:background="@drawable/bg_button_circle"
+        android:elevation="10dp"
+        android:src="@drawable/ic_love"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_korosel_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bt_carousel"
+        app:layout_constraintBottom_toBottomOf="@+id/mcflurry"
+        app:layout_constraintEnd_toEndOf="@+id/mcflurry"
+        app:layout_constraintStart_toStartOf="@+id/mcflurry" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_id_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        android:text="McFlurry"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_product" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_id_restauran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="320dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text=" McDonald's"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_id_product" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressTint="#FDCC4C"
+        android:rating="5"
+        app:layout_constraintStart_toStartOf="@+id/tv_id_restauran"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id_restauran" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="Rp11.364"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_id_product"
+        app:layout_constraintStart_toEndOf="@+id/tv_id_product"
+        app:layout_constraintTop_toTopOf="@+id/tv_id_product" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_deskripsi_product"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Soft vanilla ice cream with Oreo Crumbs biscuit mix or Milo Powder"
+        android:textColor="@color/deskripsigrey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/rating_bar"
+        app:layout_constraintTop_toBottomOf="@+id/rating_bar"
+        android:layout_marginTop="15dp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_keranjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_keranjang_btn"
+        android:elevation="15dp"
+        android:src="@drawable/keranjang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi_product" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_share_product"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@drawable/main_button"
+        app:layout_constraintTop_toBottomOf="@+id/btn_keranjang"
+        android:src="@drawable/ic_sharee"
+        android:elevation="5dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
