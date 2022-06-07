@@ -16,13 +16,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/mcflurry"
         android:layout_width="280dp"
         android:layout_height="280dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="27dp"
         android:background="@drawable/mcflurry"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,9 +53,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btn_korosel_product"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/bt"
+        android:src="@drawable/bt_carousel"
+        app:layout_constraintBottom_toBottomOf="@+id/mcflurry"
+        app:layout_constraintEnd_toEndOf="@+id/mcflurry"
+        app:layout_constraintStart_toStartOf="@+id/mcflurry" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_id_product"
@@ -81,6 +85,41 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tv_id_product" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressTint="#FDCC4C"
+        android:rating="5"
+        app:layout_constraintStart_toStartOf="@+id/tv_id_restauran"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id_restauran" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="Rp11.364"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_id_product"
+        app:layout_constraintStart_toEndOf="@+id/tv_id_product"
+        app:layout_constraintTop_toTopOf="@+id/tv_id_product" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_deskripsi_product"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Soft vanilla ice cream with Oreo Crumbs biscuit mix or Milo Powder"
+        android:textColor="@color/deskripsigrey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/rating_bar"
+        app:layout_constraintTop_toBottomOf="@+id/rating_bar"
+        android:layout_marginTop="15dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
