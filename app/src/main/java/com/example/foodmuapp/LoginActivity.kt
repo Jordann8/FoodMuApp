@@ -8,6 +8,7 @@ import com.example.foodmuapp.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
 
+
     private lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,8 +25,8 @@ class LoginActivity : AppCompatActivity() {
             else {
 
                 if (binding.etUsername.text.toString() == "admin" && binding.etPassword.text.toString() == "admin"){
-                 val intent = Intent(this, HomeActivity::class.java)
-                    startActivity(intent)
+                 val goToHome = Intent(this, HomeActivity::class.java)
+                    startActivity(goToHome)
 
                 }
                 
@@ -34,6 +35,12 @@ class LoginActivity : AppCompatActivity() {
                     
                 }
             }
+            binding.btRegister.setOnClickListener(){
+                val goToRegister = Intent(this, RegisterActivity::class.java)
+                startActivity(goToRegister)
+            }
+
+
 
         }
 
