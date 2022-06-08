@@ -26,8 +26,8 @@ class RegisterActivity : AppCompatActivity() {
 
         binding.tbRegister.setNavigationOnClickListener {
             val goToLogin = Intent(this, LoginActivity::class.java)
-            startActivity(goToLogin)
-        }
+            startActivity(goToLogin)}
+
 
         //Coding firebase dan verifikasi form register
 
@@ -61,10 +61,11 @@ class RegisterActivity : AppCompatActivity() {
                    }
 
 
-                 if (!cbTAC.isChecked)
+                 if (!cbTAC.isChecked){
                      Toast.makeText(this, "Please agree to our terms and condition", Toast.LENGTH_SHORT).show()
                 }
             }
 
         }
+}
 

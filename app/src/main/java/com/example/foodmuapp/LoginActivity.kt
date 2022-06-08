@@ -8,6 +8,7 @@ import com.example.foodmuapp.databinding.ActivityLoginBinding
 import com.example.foodmuapp.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 import android.text.TextWatcher
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 
 
 class LoginActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.foodmuapp.home
+package com.example.foodmuapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
