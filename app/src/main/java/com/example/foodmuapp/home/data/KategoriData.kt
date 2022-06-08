@@ -17,7 +17,6 @@ object KategoriData {
             for (position in kategoriText.indices) {
                 val kategori = MakananModel()
                 kategori.makananImage = kategoriText[position]
-                list.add(kategori)
             }
             return list
         }
