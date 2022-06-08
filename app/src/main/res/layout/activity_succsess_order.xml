@@ -50,6 +50,7 @@
         android:layout_marginTop="160dp"
         android:fontFamily="@font/poppins_semi_bold"
         android:text="Track"
+        android:background="@drawable/main_button"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
