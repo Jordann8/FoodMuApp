@@ -387,10 +387,8 @@
             android:layout_alignParentEnd="true"
             android:layout_below="@id/tv_totalnya"/>
 
-
-
     </RelativeLayout>
 
-
+    //Anjay
 
 </androidx.constraintlayout.widget.ConstraintLayout>
