@@ -61,11 +61,15 @@ class RegisterActivity : AppCompatActivity() {
                    }
 
 
-                 if (!cbTAC.isChecked){
+                 if (!cbTAC.isChecked) {
                      Toast.makeText(this, "Please agree to our terms and condition", Toast.LENGTH_SHORT).show()
-                }
+            }
+
+            else{
+                val goToHome = Intent(this, HomeActivity::class.java)
+                startActivity(goToHome)
             }
 
         }
-}
+}}
 
