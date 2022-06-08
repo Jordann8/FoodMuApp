@@ -5,4 +5,13 @@
     <string name="acc_created">Acount created!</string>
     <string name="acc_created_notif">your account has been created!, press the button below to start ordering food</string>
     <string name="start_button">Start Ordering</string>
+    <string name="hello_text">Hello, Damian!</string>
+    <string name="welcome_text">What do you want to eat today?</string>
+    <string name="search_text">Search</string>
+    <string name="restaurant_nearby_text">Restaurant nearby</string>
+    <string name="popular_food_text">Popular Food</string>
+    <string name="food_text">Food</string>
+    <string name="drink_text">Drinks</string>
+    <string name="desert_text">Desert</string>
+
 </resources>

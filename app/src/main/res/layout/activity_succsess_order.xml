@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen"
+    tools:context=".SuccsessOrderActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_sucsessorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/ic_succsessorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_succsess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="Order Success!"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_sucsessorder"
+        app:layout_constraintStart_toStartOf="@+id/iv_sucsessorder"
+        app:layout_constraintTop_toBottomOf="@+id/iv_sucsessorder" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_succsess_desc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Your food will be sent to your address!, hit the button bellow to see the status of your order"
+        android:textColor="@color/grey"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/iv_sucsessorder"
+        app:layout_constraintStart_toStartOf="@+id/iv_sucsessorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_succsess" />
+
+    <Button
+        android:id="@+id/btn_track"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="Track"
+        android:background="@drawable/main_button"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_succsess_desc"
+        app:layout_constraintStart_toStartOf="@+id/tv_succsess_desc"
+        app:layout_constraintTop_toBottomOf="@+id/tv_succsess_desc" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
