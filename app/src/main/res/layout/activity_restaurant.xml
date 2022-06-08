@@ -46,9 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginRight="350dp"
-        android:src="@drawable/ic_arrow_back"
-
-        >
+        android:src="@drawable/ic_arrow_back">
 
 
     </ImageButton>
@@ -265,8 +263,7 @@
                 android:layout_height="wrap_content"
                 android:progressTint="#FDCC4C"
                 android:rating="5"
-                android:layout_marginStart="3dp"
-                />
+                android:layout_marginStart="3dp" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -285,8 +282,8 @@
                 android:layout_height="wrap_content"
                 android:text="“suka banget deh ama ni restoran”"
                 android:fontFamily="@font/poppins_medium"
-                android:textSize="12sp"
-                />
+                android:textSize="12sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -295,8 +292,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="230dp"
-            android:gravity="center"
-            >
+            android:gravity="center">
 
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -304,13 +300,9 @@
                 android:layout_height="wrap_content"
                 android:text="21/03/21"
                 android:textSize="11sp"
-                android:fontFamily="@font/poppins_medium"
-                />
+                android:fontFamily="@font/poppins_medium" />
+
         </LinearLayout>
-
-
-
-
 
     </RelativeLayout>
 
