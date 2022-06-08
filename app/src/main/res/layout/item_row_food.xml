@@ -39,11 +39,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/tv_makanan"
-            android:layout_marginVertical="45dp"
-            android:layout_marginStart="2dp"
+            android:layout_marginTop="45dp"
             android:fontFamily="@font/poppins_medium"
             android:text="McDonald's"
-            android:textColor="@color/black"
             android:textSize="16sp" />
 
         <RatingBar
