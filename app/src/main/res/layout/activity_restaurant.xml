@@ -46,9 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginRight="350dp"
-        android:src="@drawable/ic_arrow_back"
-
-        >
+        android:src="@drawable/ic_arrow_back">
 
 
     </ImageButton>
