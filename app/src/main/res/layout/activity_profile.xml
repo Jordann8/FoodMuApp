@@ -13,6 +13,7 @@
         android:layout_marginTop="30dp"
         android:id="@+id/tb_profile"
         app:title="My profile"
+        app:titleTextColor="@color/black"
         app:navigationIcon="@drawable/ic_arrow_back"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +48,7 @@
         android:layout_width="325dp"
         android:layout_height="150dp"
         android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
         android:elevation="20dp"
         app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +57,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/iv_profile"
@@ -124,6 +127,7 @@
         android:id="@+id/cv_cart_menu"
         android:layout_width="320dp"
         android:layout_height="62dp"
+        android:backgroundTint="@color/white"
         android:layout_marginTop="25dp"
         app:cardCornerRadius="13dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -175,6 +179,7 @@
         android:id="@+id/cv_notification_menu"
         android:layout_width="320dp"
         android:layout_height="62dp"
+        android:backgroundTint="@color/white"
         android:layout_marginTop="25dp"
         app:cardCornerRadius="13dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -226,6 +231,7 @@
         android:id="@+id/cv_faq_menu"
         android:layout_width="320dp"
         android:layout_height="62dp"
+        android:backgroundTint="@color/white"
         android:layout_marginTop="25dp"
         app:cardCornerRadius="13dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -277,6 +283,7 @@
         android:id="@+id/cv_help_menu"
         android:layout_width="320dp"
         android:layout_height="62dp"
+        android:backgroundTint="@color/white"
         android:layout_marginTop="25dp"
         app:cardCornerRadius="13dp"
         app:layout_constraintEnd_toEndOf="parent"
