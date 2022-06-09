@@ -2,6 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
     android:layout_width="350dp"
     android:layout_height="190dp"
     android:layout_marginHorizontal="10dp"
@@ -15,17 +16,17 @@
         android:layout_height="190dp" >
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/iv_resto"
+            android:id="@+id/cover"
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:scaleType="centerCrop"
             android:src="@drawable/bg_resto" />
 
         <TextView
-            android:id="@+id/tv_restaurant"
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/iv_resto"
+            android:layout_below="@+id/cover"
             android:layout_marginVertical="5dp"
             android:layout_marginLeft="10dp"
             android:fontFamily="@font/poppins_semi_bold"
@@ -47,7 +48,7 @@
             android:id="@+id/btn_back"
             android:layout_width="50dp"
             android:layout_height="40dp"
-            android:layout_below="@+id/iv_resto"
+            android:layout_below="@+id/cover"
             android:layout_alignParentEnd="true"
             android:layout_marginHorizontal="30dp"
             android:backgroundTint="@color/white"
@@ -59,7 +60,7 @@
             android:id="@+id/btn_favorite"
             android:backgroundTint="@color/white"
             android:src="@drawable/ic_love"
-            android:layout_below="@+id/iv_resto"
+            android:layout_below="@+id/cover"
             android:layout_alignParentEnd="true" />
 
 

@@ -14,7 +14,6 @@
         android:layout_marginTop="30dp"
         android:id="@+id/tb_detail_profile"
         app:title="My profile"
-        app:titleTextColor="@color/black"
         app:navigationIcon="@drawable/ic_arrow_back" />
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -48,7 +47,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Phone Number"
-            android:textColor="@color/grey_font"
             android:fontFamily="@font/poppins_medium"
             android:textSize="16sp"
             android:layout_below="@id/tv_nama_detail_profile"
@@ -90,7 +88,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email"
-            android:textColor="@color/grey_font"
             android:fontFamily="@font/poppins_medium"
             android:textSize="16sp"
             android:layout_below="@id/tv_phone_numbernya"
@@ -132,7 +129,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Payment Method"
-            android:textColor="@color/grey_font"
             android:fontFamily="@font/poppins_medium"
             android:textSize="16sp"
             android:layout_below="@id/tv_profile_emailnya"
@@ -174,7 +170,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Address"
-            android:textColor="@color/grey_font"
             android:fontFamily="@font/poppins_medium"
             android:textSize="16sp"
             android:layout_below="@id/tv_profile_paymentnya"
