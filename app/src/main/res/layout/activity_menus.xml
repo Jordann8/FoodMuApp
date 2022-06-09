@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenusActivity"
-    android:background="@drawable/screen">
+    tools:context=".MenusActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
@@ -13,7 +12,6 @@
         android:layout_marginTop="30dp"
         android:id="@+id/tb_menu"
         app:title="Menu"
-        app:titleTextColor="@color/black"
         app:navigationIcon="@drawable/ic_arrow_back"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"

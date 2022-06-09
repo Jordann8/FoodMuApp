@@ -1,4 +1,4 @@
-package com.example.foodmuapp.home.model
+package com.example.foodmuapp.home
 
 
 data class MakananModel (
