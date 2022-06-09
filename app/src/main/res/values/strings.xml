@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FoodMuApp</string>
+    <string name="app_name">FOOD MU!</string>
     <string name="event_no_history">No history yet</string>
     <string name="event_no_history_desc">oopps!, you haven\'t ordered anything yet hit the back button above to start ordering a food</string>
     <string name="acc_created">Acount created!</string>
