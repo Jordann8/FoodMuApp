@@ -186,17 +186,17 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <com.google.android.material.button.MaterialButton
+                <androidx.appcompat.widget.AppCompatImageButton
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginRight="25dp"
-                    android:backgroundTint="@color/primary"
                     android:insetLeft="0dp"
                     android:insetTop="0dp"
                     android:insetRight="0dp"
                     android:insetBottom="0dp"
                     app:cornerRadius="13dp"
-                    app:icon="@drawable/ic_bagi"
+                    android:background="@drawable/main_button"
+                    android:src="@drawable/ic_sharee"
                     app:iconGravity="textStart"
                     app:iconPadding="0dp"
                     app:iconTint="@color/black" />
@@ -241,7 +241,8 @@
                 android:layout_width="30dp"
                 android:layout_height="fill_parent"
                 android:src="@drawable/profiles"
-
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
                 />
 
 
@@ -251,7 +252,7 @@
                 android:layout_width="260dp"
                 android:layout_height="25dp"
                 android:layout_alignParentStart="true"
-                android:layout_marginLeft="30dp">
+                android:layout_marginLeft="35dp">
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
@@ -278,7 +279,7 @@
                 android:layout_height="20dp"
                 android:layout_alignLeft="@id/ic_profile"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="35dp"
                 android:layout_marginTop="25dp"
                 android:layout_toEndOf="@+id/ic_profile">
 
@@ -287,6 +288,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="“suka banget deh ama ni restoran”"
+                    android:textColor="@color/black"
                     android:fontFamily="@font/poppins_medium"
                     android:textSize="12sp" />
 
@@ -305,6 +307,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="21/03/21"
+                    android:textColor="@color/black"
                     android:textSize="11sp"
                     android:fontFamily="@font/poppins_medium" />
 
