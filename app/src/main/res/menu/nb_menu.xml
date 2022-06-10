@@ -16,18 +16,20 @@
         app:cnb_iconColor="#5FD068"
         />
 
+
+
+    <item
+        android:id="@+id/nb_liked"
+        android:icon="@drawable/ic_love"
+        android:title="Liked"
+        app:cnb_iconColor="#FF5D5D"
+
+        />
+
     <item
         android:id="@+id/nb_profile"
         android:icon="@drawable/ic_profile"
         android:title="Profile"
         app:cnb_iconColor="#1363DF"
-         />
-
-    <item
-        android:id="@+id/nb_settings"
-        android:icon="@drawable/ic_baseline_settings_24"
-        android:title="Settings"
-        app:cnb_iconColor="#595260"
-
         />
 </menu>

@@ -50,6 +50,7 @@ class LoginActivity : AppCompatActivity() {
                     if (it.isSuccessful){
                         val goToHome = Intent(this, HomeActivity::class.java)
                         startActivity(goToHome)
+                        finish()
                     }
                     
                     else{
@@ -66,7 +67,8 @@ class LoginActivity : AppCompatActivity() {
             }
 
 
-        }}
+        }
+}
 
 
 
