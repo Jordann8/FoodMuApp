@@ -64,6 +64,7 @@
                 android:layout_marginEnd="-3dp"
                 android:fontFamily="@font/poppins_medium"
                 android:text="McDonald's"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <RatingBar
@@ -100,7 +101,7 @@
                 android:src="@drawable/ic_edit" />
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="60dp"
+                android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:src="@drawable/bg_button_tambahkurang"
                 android:layout_alignBottom="@id/tv_harga"
@@ -109,23 +110,23 @@
                 android:layout_alignParentEnd="true"/>
 
             <RelativeLayout
-                android:layout_width="60dp"
+                android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:layout_alignBottom="@id/tv_harga"
                 android:layout_marginBottom="5dp"
                 android:layout_marginEnd="18dp"
                 android:layout_alignParentEnd="true">
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/ic_remove"
                     android:layout_marginStart="2dp"
                     android:backgroundTint="@color/black"
                     android:layout_centerVertical="true"
                     android:layout_alignParentStart="true"/>
 
-                <androidx.appcompat.widget.AppCompatTextView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1"
@@ -133,12 +134,12 @@
                     android:textColor="@color/black"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="3dp"
                     android:layout_centerInParent="true" />
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/ic_tambah"
                     android:backgroundTint="@color/black"
                     android:layout_centerVertical="true"
@@ -197,6 +198,7 @@
                 android:layout_marginEnd="-3dp"
                 android:fontFamily="@font/poppins_medium"
                 android:text="McDonald's"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <RatingBar
@@ -233,7 +235,7 @@
                 android:src="@drawable/ic_edit" />
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="60dp"
+                android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:src="@drawable/bg_button_tambahkurang"
                 android:layout_alignBottom="@id/tv_harga_burger"
@@ -242,23 +244,23 @@
                 android:layout_alignParentEnd="true"/>
 
             <RelativeLayout
-                android:layout_width="60dp"
+                android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:layout_alignBottom="@id/tv_harga_burger"
                 android:layout_marginBottom="5dp"
                 android:layout_marginEnd="18dp"
                 android:layout_alignParentEnd="true">
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/ic_remove"
                     android:layout_marginStart="2dp"
                     android:backgroundTint="@color/black"
                     android:layout_centerVertical="true"
                     android:layout_alignParentStart="true"/>
 
-                <androidx.appcompat.widget.AppCompatTextView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1"
@@ -266,12 +268,12 @@
                     android:textColor="@color/black"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="3dp"
                     android:layout_centerInParent="true" />
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/ic_tambah"
                     android:backgroundTint="@color/black"
                     android:layout_centerVertical="true"
@@ -351,7 +353,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:backgroundTint="@color/black"
-            android:background="@drawable/ic_jam"
+            android:src="@drawable/ic_jam"
             android:layout_below="@id/tv_total"
             android:layout_marginStart="45dp"/>
 
