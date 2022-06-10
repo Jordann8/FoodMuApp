@@ -4,15 +4,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/screen"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        class = "com.example.foodmuapp.MainFragment"
-        >
+        class = "com.example.foodmuapp.MainFragment">
 
     </FrameLayout>
 
@@ -22,8 +20,6 @@
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:cnb_menuResource="@menu/nb_menu"
-        android:background="@color/white"
-
-        />
+        android:background="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
