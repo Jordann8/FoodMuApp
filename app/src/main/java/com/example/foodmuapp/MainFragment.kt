@@ -42,7 +42,7 @@ class MainFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         //return inflater.inflate(R.layout.fragment_main, container, false)
         binding = FragmentMainBinding.inflate(layoutInflater)
         return binding.root
