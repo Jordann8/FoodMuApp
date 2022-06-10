@@ -9,39 +9,40 @@
     tools:context=".DetailProfileActivity">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_detail_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:id="@+id/tb_detail_profile"
-        app:title="My profile"
-        app:navigationIcon="@drawable/ic_arrow_back" />
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="My profile" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/photo_detail_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_profile_detail"
         android:layout_below="@id/tb_detail_profile"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_profile_detail" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="700dp"
+        android:layout_below="@id/photo_detail_profile"
         android:background="@drawable/bg_detail_profile"
-        android:layout_below="@id/photo_detail_profile">
+        android:padding="20dp"
+        >
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_nama_detail_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Damian Lillard"
-            android:fontFamily="@font/poppins_medium"
-            android:textSize="21dp"
-            android:textColor="@color/black"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Profile"
+            android:textColor="@color/black"
+            android:textSize="21dp" />
 
-        //phone number
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_phone_number"
@@ -49,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_nama_detail_profile"
             android:layout_alignEnd="@id/tv_nama_detail_profile"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="60dp"
             android:fontFamily="@font/poppins_medium"
             android:text="Phone Number"
@@ -59,168 +60,142 @@
             android:id="@+id/tv_phone_numbernya"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+62 878 6987 6534"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textSize="21sp"
-            android:textColor="@color/black"
             android:layout_below="@id/tv_phone_number"
-            android:layout_alignStart="@id/tv_phone_number" />
+            android:layout_alignStart="@id/tv_phone_number"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="+62 878 6987 6534"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignTop="@id/tv_phone_number"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/ic_phone"
-            android:backgroundTint="@color/black" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_change"
             android:layout_alignTop="@id/tv_phone_number"
-            android:layout_marginTop="10dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="30dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/ic_change" />
 
         //email
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_profile_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
-            android:fontFamily="@font/poppins_medium"
-            android:textSize="16sp"
             android:layout_below="@id/tv_phone_numbernya"
+            android:layout_alignEnd="@id/tv_phone_number"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="75dp"
-            android:layout_alignEnd="@id/tv_phone_number" />
+            android:fontFamily="@font/poppins_medium"
+            android:text="Email"
+            android:textSize="16sp" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_profile_emailnya"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="lildamian@gmail.com"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textSize="18sp"
-            android:textColor="@color/black"
             android:layout_below="@id/tv_profile_email"
-            android:layout_alignStart="@id/tv_profile_email" />
+            android:layout_alignStart="@id/tv_profile_email"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="lildamian@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignTop="@id/tv_profile_email"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/ic_mail"
-            android:backgroundTint="@color/black" />
+
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_change"
             android:layout_alignTop="@id/tv_profile_email"
-            android:layout_marginTop="10dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="30dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/ic_change" />
 
         //payment
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_profile_payment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Payment Method"
-            android:fontFamily="@font/poppins_medium"
-            android:textSize="16sp"
             android:layout_below="@id/tv_profile_emailnya"
+            android:layout_alignEnd="@id/tv_nama_detail_profile"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="40dp"
-            android:layout_alignEnd="@id/tv_nama_detail_profile" />
+            android:fontFamily="@font/poppins_medium"
+            android:text="Payment Method"
+            android:textSize="16sp" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_profile_paymentnya"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Credit card, Mandiri"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textSize="18sp"
-            android:textColor="@color/black"
             android:layout_below="@id/tv_profile_payment"
-            android:layout_alignStart="@id/tv_profile_payment" />
+            android:layout_alignStart="@id/tv_profile_payment"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="Credit card, Mandiri"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignTop="@id/tv_profile_payment"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/ic_credit_card"
-            android:backgroundTint="@color/black" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_change"
             android:layout_alignTop="@id/tv_profile_payment"
-            android:layout_marginTop="10dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="30dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/ic_change" />
 
-        //address
+
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_profile_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Address"
-            android:fontFamily="@font/poppins_medium"
-            android:textSize="16sp"
             android:layout_below="@id/tv_profile_paymentnya"
+            android:layout_alignEnd="@id/tv_phone_number"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="51dp"
-            android:layout_alignEnd="@id/tv_phone_number" />
+            android:fontFamily="@font/poppins_medium"
+            android:text="Address"
+            android:textSize="16sp" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_profile_addressnya"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jl.Kenari No.37, Desa Ajo"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textSize="18sp"
-            android:textColor="@color/black"
             android:layout_below="@id/tv_profile_address"
-            android:layout_alignStart="@id/tv_profile_address" />
+            android:layout_alignStart="@id/tv_profile_address"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="Jl.Kenari No.37, Desa Ajo"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignTop="@id/tv_profile_address"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/ic_address"
-            android:backgroundTint="@color/black" />
+
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_change"
             android:layout_alignTop="@id/tv_profile_address"
-            android:layout_marginTop="10dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="30dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/ic_change" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bt_done_edit"
             android:layout_width="270dp"
             android:layout_height="60dp"
-            android:text="Done"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:background="@drawable/main_button"
             android:layout_below="@id/tv_profile_addressnya"
-            android:layout_marginTop="100dp"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/main_button"
+            android:text="Done"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
 
     </RelativeLayout>
 
