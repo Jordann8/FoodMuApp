@@ -11,8 +11,10 @@
         android:theme="@style/Theme.FoodMuApp">
         <activity android:name=".CheckOutActivity"></activity>
         <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
+            android:name=".DetailProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            />
         <activity
             android:name=".HomeActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
