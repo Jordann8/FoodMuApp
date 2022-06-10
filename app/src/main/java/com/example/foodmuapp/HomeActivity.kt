@@ -11,8 +11,7 @@ import com.example.foodmuapp.home.adapter.FoodItemAdapter
 
 class HomeActivity : AppCompatActivity() {
 
-    private var layoutManager: RecyclerView.LayoutManager? = null
-    private var adapter: RecyclerView.Adapter<FoodItemAdapter.ViewHolder>? = null
+
 
     private lateinit var binding: ActivityHomeBinding
 
@@ -22,8 +21,6 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
 
 
         binding.bottomNavbar.setItemSelected(R.id.nb_home)
@@ -47,6 +44,8 @@ class HomeActivity : AppCompatActivity() {
 
 
 }
+
+
 
     private fun setFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction().apply {
