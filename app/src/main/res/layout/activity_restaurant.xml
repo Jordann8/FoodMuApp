@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RestaurantActivity"
-    android:background="@drawable/screen"
-    >
+    android:background="@drawable/screen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -20,14 +19,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-
-
-            app:layout_constraintTop_toTopOf="parent">
-
-
-
-
-        </androidx.appcompat.widget.AppCompatImageView>
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/appCompatImageView2"
@@ -40,8 +32,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/bg_button_circle"
             android:backgroundTint="@color/white"
             android:elevation="10dp"
@@ -50,10 +42,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginRight="350dp"
-            android:src="@drawable/ic_arrow_back">
-
-
-        </ImageButton>
+            android:src="@drawable/ic_arrow_back"/>
 
         <ImageView
             android:contentDescription="ssks"
@@ -64,12 +53,11 @@
             app:layout_constraintTop_toBottomOf="@+id/appCompatImageView2"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="60dp"
-            />
+            android:layout_marginTop="60dp" />
 
         <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/bg_button_circle"
             android:backgroundTint="@color/white"
             android:elevation="10dp"
@@ -78,14 +66,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="350dp"
-            android:src="@drawable/ic_hati"
-            android:paddingTop="25dp"
-            android:paddingStart="2dp"
-            android:paddingEnd="0dp"
-            >
-
-
-        </ImageButton>
+            android:src="@drawable/ic_love"
+            android:paddingTop="1dp"/>
 
         <RelativeLayout
             android:id="@+id/rlDesc"
@@ -121,8 +103,7 @@
                 android:paddingVertical="8dp"
                 android:paddingLeft="17dp"
                 android:text="Fast Food Restaurant"
-
-                />
+                android:textSize="16sp" />
 
             <RatingBar
                 android:id="@+id/ratingBar"
@@ -157,7 +138,8 @@
                 android:fontFamily="@font/poppins_medium"
                 android:paddingLeft="16sp"
                 android:paddingRight="80sp"
-                android:text="Classic fast food chain, famous for hamburgers, potatoes &amp; ice cream" />
+                android:text="Classic fast food chain, famous for hamburgers, potatoes &amp; ice cream"
+                android:textSize="16sp"/>
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/btn_keranjang"
@@ -166,13 +148,14 @@
                 android:layout_above="@+id/buttonPanel"
                 android:layout_alignStart="@+id/buttonPanel"
                 android:layout_alignLeft="@id/tv_desc"
+                android:layout_alignEnd="@+id/buttonPanel"
                 android:layout_alignParentLeft="true"
-                android:layout_marginStart="330dp"
+                android:layout_marginStart="350dp"
                 android:layout_marginBottom="-175dp"
                 android:background="@drawable/bg_keranjang_btn"
                 android:elevation="10dp"
-                android:paddingRight="2dp"
-                android:src="@drawable/keranjangg" />
+                android:paddingStart="2dp"
+                android:src="@drawable/ic_cart" />
 
             <LinearLayout
                 android:id="@+id/buttonPanel"
@@ -187,14 +170,14 @@
                 <ImageButton
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"
                     android:backgroundTint="@color/primary"
                     android:insetLeft="0dp"
                     android:insetTop="0dp"
                     android:insetRight="0dp"
                     android:insetBottom="0dp"
                     app:cornerRadius="13dp"
-                    android:src="@drawable/ic_sharee"
+                    android:src="@drawable/ic_bagi"
                     app:iconGravity="textStart"
                     app:iconPadding="0dp"
                     android:background="@drawable/main_button"
@@ -217,7 +200,7 @@
                 android:id="@+id/tv_revuew"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@id/buttonPanel"
+                android:layout_alignStart="@id/buttonPanel"
                 android:layout_alignBottom="@id/buttonPanel"
                 android:layout_marginBottom="-20dp"
                 android:fontFamily="@font/poppins_medium"
@@ -230,7 +213,7 @@
         <RelativeLayout
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:layout_marginRight="55dp"
+            android:layout_marginEnd="55dp"
             app:layout_constraintLeft_toLeftOf="@id/rlDesc"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/rlDesc" >
@@ -239,9 +222,7 @@
                 android:id="@+id/ic_profile"
                 android:layout_width="30dp"
                 android:layout_height="fill_parent"
-                android:src="@drawable/profiles"
-
-                />
+                android:src="@drawable/ic_person" />
 
 
             <androidx.appcompat.widget.LinearLayoutCompat
@@ -294,27 +275,18 @@
             <LinearLayout
                 android:layout_width="60dp"
                 android:layout_height="20dp"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="230dp"
+                android:layout_alignParentRight="true"
                 android:gravity="center">
 
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
                     android:text="21/03/21"
-                    android:textSize="11sp"
-                    android:fontFamily="@font/poppins_medium" />
+                    android:textSize="11sp" />
 
             </LinearLayout>
-
         </RelativeLayout>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-    </ScrollView>
+</ScrollView>

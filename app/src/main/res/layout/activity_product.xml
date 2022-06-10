@@ -35,21 +35,21 @@
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btn_back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="6dp"
-            android:layout_marginTop="6dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/bg_button_circle"
-            android:elevation="10dp"
+            android:elevation="15dp"
             android:src="@drawable/ic_arrow_back"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="6dp"
-            android:layout_marginEnd="6dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
             android:id="@+id/btn_favorite"
             android:background="@drawable/bg_button_circle"
             android:elevation="10dp"
@@ -111,7 +111,6 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_medium"
             android:text="Soft vanilla ice cream with Oreo Crumbs biscuit mix or Milo Powder"
-            android:textColor="@color/deskripsigrey"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@id/rating_bar"
             app:layout_constraintTop_toBottomOf="@+id/rating_bar"
@@ -122,28 +121,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="30dp"
             android:background="@drawable/bg_keranjang_btn"
             android:elevation="15dp"
-            android:src="@drawable/keranjangg"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_cart"
+            app:layout_constraintEnd_toEndOf="@id/btn_addtocart"
             app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi_product" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btn_share_product"
-            android:layout_width="54dp"
-            android:layout_height="54dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginTop="70dp"
+            android:layout_marginStart="20dp"
             android:background="@drawable/main_button"
             android:elevation="5dp"
-            android:src="@drawable/ic_sharee"
+            android:src="@drawable/ic_bagi"
             app:layout_constraintStart_toStartOf="@+id/tv_deskripsi_product"
             app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi_product" />
 
         <Button
             android:id="@+id/btn_addtocart"
-            android:layout_width="250dp"
-            android:layout_height="55dp"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
             android:layout_marginStart="40dp"
             android:elevation="15dp"
             android:background="@drawable/main_button"
@@ -151,6 +150,7 @@
             android:text="Add to cart"
             android:textColor="@color/black"
             android:textSize="16sp"
+            android:background="@drawable/main_button"
             app:layout_constraintBottom_toBottomOf="@+id/btn_share_product"
             app:layout_constraintStart_toEndOf="@+id/btn_share_product" />
 
@@ -171,7 +171,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:src="@drawable/profiles"
+            android:src="@drawable/ic_person"
             app:layout_constraintBottom_toBottomOf="@+id/tv_comment_reviewer"
             app:layout_constraintStart_toStartOf="@+id/tv_review_product"
             app:layout_constraintTop_toBottomOf="@+id/tv_review_product" />
@@ -231,7 +231,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:src="@drawable/profiles"
+            android:src="@drawable/ic_person"
             app:layout_constraintEnd_toEndOf="@id/iv_profile_reviewer"
             app:layout_constraintStart_toStartOf="@id/iv_profile_reviewer"
             app:layout_constraintTop_toBottomOf="@+id/iv_profile_reviewer" />

@@ -10,7 +10,7 @@ import com.example.foodmuapp.R
 
 class SplashScreenActivity : AppCompatActivity() {
 
-    private val SPLASH_TIME: Long = 3100
+    private val SPLASH_TIME: Long = 3050
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
