@@ -19,18 +19,11 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val recyclerView = findViewById<RecyclerView>(R.id.rv_popular_food)
         setContentView(R.layout.activity_home)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        layoutManager = LinearLayoutManager(this)
 
-        recyclerView.layoutManager = layoutManager
-
-        adapter = FoodItemAdapter()
-
-        recyclerView.adapter = adapter
 
 
         binding.bottomNavbar.setItemSelected(R.id.nb_home)

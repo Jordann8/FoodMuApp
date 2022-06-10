@@ -5,30 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/screen"
-    tools:context=".ProfileActivity">
+    tools:context=".DetailProfileActivity"
+    android:layout_marginTop="40dp"
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:id="@+id/tb_profile"
-        app:title="My profile"
-        app:navigationIcon="@drawable/ic_arrow_back"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+    >
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_personal_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Personal details"
         android:textColor="@color/black"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="@+id/cv_profile"
-        app:layout_constraintTop_toBottomOf="@+id/tb_profile" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_change"
@@ -54,6 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_personal_details">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_provile"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
