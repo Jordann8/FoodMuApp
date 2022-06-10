@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOutActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tb_checkout"
+        app:title="Checkout"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_address_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Address details"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/cv_address"
+        app:layout_constraintTop_toBottomOf="@id/tb_checkout" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="change"
+        android:textColor="@color/yellowtextcolor"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_address_details"
+        app:layout_constraintEnd_toEndOf="@+id/cv_address"
+        app:layout_constraintTop_toTopOf="@+id/tv_address_details" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_address"
+        android:layout_width="350dp"
+        android:layout_height="190dp"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_address_details">
+
+        <RelativeLayout
+            android:id="@+id/background"
+            android:layout_width="350dp"
+            android:layout_height="190dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_address"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_address" />
+
+            <TextView
+                android:id="@+id/tv_nama_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_address"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Damian Lillard"
+                android:textColor="@color/black"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/tv_restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tv_nama_address"
+                android:layout_below="@id/tv_nama_address"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Jl.Kenari No 37, Desa Ajosari Kota Sumber"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_nomor_hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/iv_address"
+                android:fontFamily="@font/poppins_medium"
+                android:text="+62 878 6987 6534"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_payment_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Payment Method"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/cv_address"
+        app:layout_constraintTop_toBottomOf="@id/cv_address" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_payment_menu"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_payment_method" >
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="65dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_credit_card"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_credit_card"
+                android:backgroundTint="@color/black"
+                android:layout_centerVertical="true"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_credit_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/iv_credit_card"
+                android:layout_marginStart="40dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="Credit card"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_arrow_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_arrow_front"
+                android:backgroundTint="@color/black"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_deliver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Deliver Method"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/cv_payment_menu"
+        app:layout_constraintTop_toBottomOf="@id/cv_payment_menu" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_deliver"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_deliver" >
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="65dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_gosend"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_gosend"
+                android:backgroundTint="@color/black"
+                android:layout_centerVertical="true"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_gosend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/iv_gosend"
+                android:layout_marginStart="40dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="gosend"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_harga_gosend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Rp15.000"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_arrow_gosend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_arrow_front"
+                android:backgroundTint="@color/black"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/bt_order"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_marginVertical="30dp"
+            android:text="CheckOut"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="@drawable/main_button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tv_subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtotal :"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginStart="45dp"/>
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total :"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginStart="45dp"
+            android:layout_below="@id/tv_subtotal"/>
+
+        <TextView
+            android:id="@+id/tv_subtotalnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp22.728"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginEnd="45dp"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/tv_totalnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp37.728"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginEnd="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_subtotalnya"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/ic_jam"
+            android:layout_below="@id/tv_total"
+            android:layout_marginStart="45dp"/>
+
+        <TextView
+            android:id="@+id/tv_menit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25 Minutes"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginStart="75dp"
+            android:layout_below="@id/tv_total"/>
+
+        <TextView
+            android:id="@+id/tv_restonya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="McDonald's"
+            android:textSize="21sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginEnd="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_totalnya"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
