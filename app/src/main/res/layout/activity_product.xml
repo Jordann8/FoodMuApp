@@ -150,7 +150,6 @@
             android:text="Add to cart"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:background="@drawable/main_button"
             app:layout_constraintBottom_toBottomOf="@+id/btn_share_product"
             app:layout_constraintStart_toEndOf="@+id/btn_share_product" />
 
