@@ -39,10 +39,14 @@ class LoginActivity : AppCompatActivity() {
                 val etEmail = binding.etUsername.text.toString()
                 val etPassword = binding.etPassword.text.toString()
 
-                if (etEmail.isNullOrEmpty() && etPassword.isNullOrEmpty()){
+                if (etEmail.isNullOrEmpty() || etPassword.isNullOrEmpty()){
                     Toast.makeText(this, "Please fill in the required fields", Toast.LENGTH_SHORT).show()
 
+
+
                 }
+
+
 
                 else{
 

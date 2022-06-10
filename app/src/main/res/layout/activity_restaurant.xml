@@ -184,7 +184,7 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <com.google.android.material.button.MaterialButton
+                <ImageButton
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginRight="25dp"
@@ -194,9 +194,10 @@
                     android:insetRight="0dp"
                     android:insetBottom="0dp"
                     app:cornerRadius="13dp"
-                    app:icon="@drawable/ic_bagi"
+                    android:src="@drawable/ic_sharee"
                     app:iconGravity="textStart"
                     app:iconPadding="0dp"
+                    android:background="@drawable/main_button"
                     app:iconTint="@color/black" />
 
                 <Button
