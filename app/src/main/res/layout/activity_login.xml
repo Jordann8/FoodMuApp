@@ -7,23 +7,19 @@
     android:layout_height="wrap_content"
     tools:context=".LoginActivity"
     android:id="@+id/parent"
-    android:background="@drawable/screen"
-    >
+    android:background="@drawable/screen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_header"
             android:layout_width="match_parent"
             android:layout_height="210dp"
             android:background="@drawable/header"
-            app:layout_constraintTop_toTopOf="parent"
-
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_namaaplikasi"
@@ -62,25 +58,16 @@
             app:tabIndicatorFullWidth="false"
             app:tabIndicatorColor="@color/black"
             app:tabIndicator="@drawable/bg_linetab"
-            android:background="@drawable/tablayout"
-            />
+            android:background="@drawable/tablayout" />
+
         <androidx.viewpager2.widget.ViewPager2
             app:layout_constraintTop_toBottomOf="@id/tl_loginregister"
             android:id="@+id/vp_loginregister"
             android:layout_width="match_parent"
             android:layout_height="475dp"
             android:layout_alignParentBottom="true"
-
             android:layout_marginBottom="10dp" />
 
-
-
-
-
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 </RelativeLayout>

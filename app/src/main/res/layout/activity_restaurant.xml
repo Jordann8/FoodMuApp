@@ -141,22 +141,6 @@
                 android:text="Classic fast food chain, famous for hamburgers, potatoes &amp; ice cream"
                 android:textSize="16sp"/>
 
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/btn_keranjang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_above="@+id/buttonPanel"
-                android:layout_alignStart="@+id/buttonPanel"
-                android:layout_alignLeft="@id/tv_desc"
-                android:layout_alignEnd="@+id/buttonPanel"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="350dp"
-                android:layout_marginBottom="-175dp"
-                android:background="@drawable/bg_keranjang_btn"
-                android:elevation="10dp"
-                android:paddingStart="2dp"
-                android:src="@drawable/ic_cart" />
-
             <LinearLayout
                 android:id="@+id/buttonPanel"
                 android:layout_width="wrap_content"

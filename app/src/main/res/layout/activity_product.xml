@@ -117,16 +117,6 @@
             app:layout_constraintTop_toBottomOf="@+id/rating_bar"
             android:layout_marginTop="15dp" />
 
-        <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/btn_keranjang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/bg_keranjang_btn"
-            android:elevation="15dp"
-            android:src="@drawable/ic_cart"
-            app:layout_constraintEnd_toEndOf="@id/btn_addtocart"
-            app:layout_constraintTop_toBottomOf="@+id/tv_deskripsi_product" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btn_share_product"
