@@ -57,7 +57,7 @@
             android:layout_width="350dp"
             android:layout_height="190dp">
 
-            <androidx.appcompat.widget.AppCompatImageView
+            <com.google.android.gms.maps.MapView
                 android:id="@+id/iv_address"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -203,8 +203,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@id/iv_gosend"
-                android:layout_marginStart="40dp"
                 android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:text="gosend"
                 android:textColor="@color/black"
