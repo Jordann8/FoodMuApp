@@ -133,7 +133,7 @@
                                     android:rating="5" />
 
                                 <androidx.appcompat.widget.AppCompatTextView
-                                    android:id="@+id/tv_jarak"
+                                    android:id="@+id/tv_jarakMcd"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentStart="true"
@@ -209,6 +209,18 @@
                                     android:layout_marginTop="170dp"
                                     android:progressTint="#FDCC4C"
                                     android:rating="5" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_jarakBk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginTop="167dp"
+                                    android:layout_marginStart="100dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:textColor="@color/grey"
+                                    android:text="0,9Km"
+                                    android:textSize="16sp" />
 
                                 <androidx.appcompat.widget.AppCompatImageButton
                                     android:id="@+id/btn_back2"
