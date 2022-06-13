@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="90dp"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="4dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:backgroundTint="#9F9F9F"
+            android:id="@+id/product_decrement"
+            android:layout_width="24dp"
+            android:layout_gravity="center"
+            android:layout_height="24dp">
+
+            <ImageView
+                android:src="@drawable/ic_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="0"
+            android:id="@+id/product_selectedQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:backgroundTint="#9F9F9F"
+            android:id="@+id/product_increment"
+            android:layout_width="24dp"
+            android:layout_gravity="center"
+            android:layout_height="24dp">
+
+            <ImageView
+                android:src="@drawable/ic_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
