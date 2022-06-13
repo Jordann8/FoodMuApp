@@ -10,16 +10,16 @@ import com.example.foodmuapp.R
 
 class FoodItemAdapter: RecyclerView.Adapter<FoodItemAdapter.ViewHolder>() {
 
-    private var titles = arrayOf("McFlurry", "Beef Burger", "McFlurry", "McFlurry", "McFlurry")
+    private var titles = arrayOf("McFlurry", "Beef Burger", "Big Mac", "Fish Burger", "McChicken")
 
     private var details = arrayOf("McDonald", "McDonald", "McDonald", "McDonald", "McDonald")
 
     private var images = intArrayOf(
         R.drawable.mcflurry,
         R.drawable.beefburger,
-        R.drawable.mcflurry,
-        R.drawable.mcflurry,
-        R.drawable.mcflurry
+        R.drawable.big_mac,
+        R.drawable.fish_burger,
+        R.drawable.mcchicken,
     )
 
     private var harga = arrayOf("Rp11.364", "Rp11.364", "Rp11.364", "Rp11.364", "Rp11.364")
