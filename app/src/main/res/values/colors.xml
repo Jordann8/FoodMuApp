@@ -16,4 +16,5 @@
     <color name="deskripsigrey">#55565A</color>
     <color name="navigationcolor">#FFEFEFEF</color>
     <color name="yellowtextcolor">#FDCC4C</color>
+    <color name="greytitle">#413F42</color>
 </resources>

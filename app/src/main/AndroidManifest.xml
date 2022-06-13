@@ -8,13 +8,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FoodMuApp">
-        <activity android:name=".CheckOutActivity"></activity>
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <activity
+            android:name=".ChangeNameActivity"
+            android:exported="false" />
+        <activity android:name=".CheckOutActivity" />
         <activity
             android:name=".DetailProfileActivity"
             android:exported="false"
-            android:theme="@style/Theme.Design.Light.NoActionBar"
-            />
+ />
         <activity
             android:name=".HomeActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
