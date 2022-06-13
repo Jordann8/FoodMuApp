@@ -112,6 +112,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="Soft vanilla ice cream with Oreo Crumbs biscuit mix or Milo Powder"
             android:textSize="16sp"
+            android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="@id/rating_bar"
             app:layout_constraintTop_toBottomOf="@+id/rating_bar"
             android:layout_marginTop="15dp" />

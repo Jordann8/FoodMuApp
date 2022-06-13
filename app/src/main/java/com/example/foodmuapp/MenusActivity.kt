@@ -16,11 +16,11 @@ class MenusActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menus)
 
-        listMakanan.add(MakananModel("McFlurry", R.drawable.mcflurry, "Rp11.364"))
-        listMakanan.add(MakananModel("Beef Burger", R.drawable.beefburger, "Rp11.364"))
-        listMakanan.add(MakananModel("Big Mac", R.drawable.big_mac, "Rp22.364"))
-        listMakanan.add(MakananModel("Fish Burger", R.drawable.fish_burger, "Rp11.364"))
-        listMakanan.add(MakananModel("McChicken", R.drawable.mcchicken, "Rp11.364"))
+        listMakanan.add(MakananModel("McFlurry", gambar = R.drawable.mcflurry, "Rp11.364"))
+        listMakanan.add(MakananModel("Beef Burger", gambar = R.drawable.beefburger, "Rp11.364"))
+        listMakanan.add(MakananModel("Big Mac", gambar = R.drawable.big_mac, "Rp22.364"))
+        listMakanan.add(MakananModel("Fish Burger", gambar = R.drawable.fish_burger, "Rp11.364"))
+        listMakanan.add(MakananModel("McChicken", gambar = R.drawable.mcchicken, "Rp11.364"))
 
 
         newRecyclerView = findViewById(R.id.rv_menu)
