@@ -1,5 +1,6 @@
 package com.example.foodmuapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.foodmuapp.databinding.ActivityDetailProfileBinding
@@ -17,6 +18,11 @@ class DetailProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
         val uid = auth.currentUser?.uid
+
+        binding.tbEditpf.setOnClickListener{
+          val editPf = Intent(this, ChangeNameActivity::class.java)
+            startActivity(editPf)
+        }
 
 
     }

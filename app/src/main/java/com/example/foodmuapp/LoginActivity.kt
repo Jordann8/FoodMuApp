@@ -1,14 +1,15 @@
 package com.example.foodmuapp
 
-import android.content.Intent
+import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import android.widget.TableLayout
+import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager2.widget.ViewPager2
 import com.example.foodmuapp.databinding.ActivityLoginBinding
-import com.example.foodmuapp.databinding.ActivityRegisterBinding
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.auth.FirebaseAuth
-import android.text.TextWatcher
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 
 
 class LoginActivity : AppCompatActivity() {
@@ -18,7 +19,8 @@ class LoginActivity : AppCompatActivity() {
 
     //Tempat variable jangan di ganti2 yaa ^^ -Ajriel
     private lateinit var binding: ActivityLoginBinding
-    private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var viewPagerAdapter: ViewPagerAdapter
+    private  lateinit var firebaseAuth: FirebaseAuth
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,52 +28,25 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        firebaseAuth = FirebaseAuth.getInstance()
 
+        viewPagerAdapter = ViewPagerAdapter(supportFragmentManager, lifecycle)
 
-
-
-        binding.btRegister.setOnClickListener() {
-            val goToRegister = Intent(this, RegisterActivity::class.java)
-            startActivity(goToRegister)}
-
-            binding.btLogin.setOnClickListener() {
-                val etEmail = binding.etUsername.text.toString()
-                val etPassword = binding.etPassword.text.toString()
-
-                if (etEmail.isNullOrEmpty() || etPassword.isNullOrEmpty()){
-                    Toast.makeText(this, "Please fill in the required fields", Toast.LENGTH_SHORT).show()
-
-
-
+        with(binding){
+            vpLoginregister.adapter = viewPagerAdapter
+            TabLayoutMediator(tlLoginregister, vpLoginregister) { tab, position ->
+                when (position) {
+                    0 -> tab.text = "Log in"
+                    1 -> tab.text = "Register"
                 }
-
-
-
-                else{
-
-                firebaseAuth.signInWithEmailAndPassword(etEmail, etPassword).addOnCompleteListener(){
-                    if (it.isSuccessful){
-                        val goToHome = Intent(this, HomeActivity::class.java)
-                        startActivity(goToHome)
-                        finish()
-                    }
-                    
-                    else{
-                        Toast.makeText(this, "Incorrect username or password", Toast.LENGTH_SHORT).show()
-                    }
-
-
-                }
-
-                    }
-
-
-
-            }
-
-
+            }.attach()
         }
+
+
+
+
+
+
+    }
 }
 
 

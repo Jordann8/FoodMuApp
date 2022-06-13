@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -23,8 +24,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:paddingLeft="20dp"
-                android:paddingRight="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="20dp"
                 android:paddingTop="25dp">
 
                 <TextView
@@ -34,7 +35,7 @@
                     android:text="@string/hello_text"
                     android:textColor="@color/black"
                     android:fontFamily="@font/poppins_medium"
-                    android:textSize="16dp"/>
+                    android:textSize="16sp"/>
 
                 <TextView
                     android:id="@+id/tv_welcome"
@@ -44,7 +45,7 @@
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins_semi_bold"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:layout_below="@id/hello" />
 
 
@@ -52,12 +53,12 @@
                     android:id="@+id/et_search_bar"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_marginTop="10dp"
                     android:hint="Search"
                     android:drawableStart="@drawable/ic_search"
                     android:fontFamily="@font/poppins_regular"
-                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
                     android:clickable="true"
                     android:textStyle="normal"
                     android:textSize="15sp"
@@ -69,7 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/restaurant_nearby_text"
-                    android:textSize="21sp"
+                    android:textSize="19sp"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:textColor="@color/black"
                     android:layout_below="@id/et_search_bar"
@@ -85,7 +86,7 @@
 
                     <LinearLayout
                         android:id="@+id/layout_rv_kategori"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_vertical">
 
@@ -115,21 +116,33 @@
                                     android:layout_height="wrap_content"
                                     android:layout_below="@+id/cover"
                                     android:layout_marginVertical="5dp"
-                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginStart="10dp"
                                     android:fontFamily="@font/poppins_semi_bold"
                                     android:text="McDonald's"
                                     android:textColor="@color/black"
                                     android:textSize="21sp" />
 
                                 <RatingBar
-                                    android:id="@+id/ratingBar"
+                                    android:id="@+id/ratingbar_mcdonald"
                                     style="@style/Widget.AppCompat.RatingBar.Small"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginStart="10dp"
                                     android:layout_marginTop="170dp"
                                     android:progressTint="#FDCC4C"
                                     android:rating="5" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_jarak"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginTop="167dp"
+                                    android:layout_marginStart="100dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:textColor="@color/grey"
+                                    android:text="0,5Km"
+                                    android:textSize="16sp" />
 
                                 <androidx.appcompat.widget.AppCompatImageButton
                                     android:id="@+id/btn_back"
@@ -181,7 +194,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_below="@+id/cover2"
                                     android:layout_marginVertical="5dp"
-                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginStart="10dp"
                                     android:fontFamily="@font/poppins_semi_bold"
                                     android:text="Burger King"
                                     android:textColor="@color/black"
@@ -234,7 +247,7 @@
                     android:fontFamily="@font/poppins_semi_bold"
                     android:text="@string/popular_food_text"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <ScrollView
                     android:id="@+id/container_makanan"
@@ -279,13 +292,13 @@
                                     android:layout_marginVertical="20dp"
                                     android:layout_marginEnd="90dp"
                                     android:fontFamily="@font/poppins_medium"
-                                    android:layout_alignEnd="@id/btn_bagi_food"
+                                    android:layout_alignEnd="@id/btn_bagi_mcflurry"
                                     android:text="McFlurry"
                                     android:textColor="@color/black"
                                     android:textSize="21sp" />
 
                                 <androidx.appcompat.widget.AppCompatTextView
-                                    android:id="@+id/tv_restaurant"
+                                    android:id="@+id/tv_restaurant_mcflurry"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_alignStart="@+id/tv_mcflurry"
@@ -296,30 +309,28 @@
                                     android:textSize="16sp" />
 
                                 <RatingBar
-                                    android:id="@+id/ratingbar_food"
+                                    android:id="@+id/ratingbar_mcflurry"
                                     style="@style/Widget.AppCompat.RatingBar.Small"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:layout_marginEnd="50dp"
-                                    android:layout_marginTop="80dp"
+                                    android:layout_alignStart="@id/tv_restaurant_mcflurry"
+                                    android:layout_marginTop="70dp"
                                     android:progressTint="#FDCC4C"
                                     android:rating="5" />
 
                                 <androidx.appcompat.widget.AppCompatTextView
-                                    android:id="@+id/tv_harga"
+                                    android:id="@+id/tv_harga_mcflurry"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginVertical="90dp"
-                                    android:layout_marginEnd="90dp"
+                                    android:layout_alignStart="@id/ratingbar_mcflurry"
                                     android:fontFamily="@font/poppins_semi_bold"
-                                    android:layout_alignEnd="@id/btn_bagi_food"
                                     android:text="Rp11.364"
                                     android:textColor="@color/black"
                                     android:textSize="21sp" />
 
                                 <androidx.appcompat.widget.AppCompatImageButton
-                                    android:id="@+id/btn_bagi_food"
+                                    android:id="@+id/btn_bagi_mcflurry"
                                     android:layout_width="50dp"
                                     android:layout_height="40dp"
                                     android:layout_alignParentEnd="true"
@@ -389,9 +400,8 @@
                                     style="@style/Widget.AppCompat.RatingBar.Small"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:layout_marginEnd="130dp"
-                                    android:layout_marginVertical="80dp"
+                                    android:layout_alignStart="@id/tv_restaurant_burger"
+                                    android:layout_marginVertical="70dp"
                                     android:progressTint="#FDCC4C"
                                     android:rating="5" />
 
@@ -479,9 +489,8 @@
                                     style="@style/Widget.AppCompat.RatingBar.Small"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:layout_marginEnd="130dp"
-                                    android:layout_marginVertical="80dp"
+                                    android:layout_alignStart="@id/tv_restaurant_big_mac"
+                                    android:layout_marginVertical="70dp"
                                     android:progressTint="#FDCC4C"
                                     android:rating="5" />
 
@@ -490,9 +499,9 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginVertical="90dp"
-                                    android:layout_marginEnd="80dp"
                                     android:fontFamily="@font/poppins_semi_bold"
-                                    android:layout_alignEnd="@id/btn_bagi_big_mac"
+                                    android:layout_alignStart="@id/ratingbar_big_mac"
+
                                     android:text="Rp22.364"
                                     android:textColor="@color/black"
                                     android:textSize="21sp" />
@@ -569,9 +578,8 @@
                                     style="@style/Widget.AppCompat.RatingBar.Small"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:layout_marginEnd="130dp"
-                                    android:layout_marginVertical="80dp"
+                                    android:layout_alignStart="@id/tv_restaurant_fish_burger"
+                                    android:layout_marginVertical="70dp"
                                     android:progressTint="#FDCC4C"
                                     android:rating="5" />
 
@@ -580,7 +588,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginVertical="90dp"
-                                    android:layout_marginEnd="90dp"
+                                    android:layout_alignStart="@id/tv_restaurant_fish_burger"
                                     android:fontFamily="@font/poppins_semi_bold"
                                     android:layout_alignEnd="@id/btn_bagi_fish_burger"
                                     android:text="Rp11.364"
@@ -615,8 +623,7 @@
                             android:layout_marginVertical="10dp"
                             android:layout_marginHorizontal="5dp"
                             app:cardCornerRadius="13dp"
-                            android:backgroundTint="@color/white"
-                            app:cardElevation="20dp">
+                            android:backgroundTint="@color/white">
 
                             <RelativeLayout
                                 android:id="@+id/background_mcchicken"
@@ -660,9 +667,8 @@
                                     style="@style/Widget.AppCompat.RatingBar.Small"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:layout_marginEnd="130dp"
-                                    android:layout_marginVertical="65dp"
+                                    android:layout_alignStart="@id/tv_restaurant_mcchicken"
+                                    android:layout_marginTop="70dp"
                                     android:progressTint="#FDCC4C"
                                     android:rating="5" />
 
@@ -671,7 +677,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginVertical="90dp"
-                                    android:layout_marginEnd="90dp"
+                                    android:layout_alignStart="@id/ratingbar_mcchicken"
                                     android:fontFamily="@font/poppins_semi_bold"
                                     android:layout_alignEnd="@id/btn_bagi_mcchicken"
                                     android:text="Rp11.364"
