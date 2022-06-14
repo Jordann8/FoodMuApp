@@ -53,17 +53,17 @@
                     android:id="@+id/et_search_bar"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
+                    android:layout_below="@id/tv_welcome"
                     android:layout_marginHorizontal="5dp"
                     android:layout_marginTop="10dp"
-                    android:hint="Search"
+                    android:background="@drawable/rounded_button"
+                    android:clickable="true"
                     android:drawableStart="@drawable/ic_search"
                     android:fontFamily="@font/poppins_regular"
+                    android:hint="Search"
                     android:paddingStart="20dp"
-                    android:clickable="true"
-                    android:textStyle="normal"
                     android:textSize="15sp"
-                    android:background="@drawable/rounded_button"
-                    android:layout_below="@id/tv_welcome"/>
+                    android:textStyle="normal" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tv_restaurantnearby"
