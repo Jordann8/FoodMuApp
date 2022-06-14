@@ -10,19 +10,20 @@ import com.example.foodmuapp.R
 
 class FoodItemAdapter: RecyclerView.Adapter<FoodItemAdapter.ViewHolder>() {
 
-    private var titles = arrayOf("McFlurry", "Burger", "Big Mac", "Fish Burger", "McChicken")
+    private var titles = arrayOf("McFlurry", "Burger", "Big Mac", "PaNas 1", "PaNas 2", "Sprite")
 
-    private var details = arrayOf("McDonald", "McDonald", "McDonald", "McDonald", "McDonald")
+    private var details = arrayOf("McDonald's", "McDonald's", "McDonald's", "McDonald's", "McDonald's", "McDonald's")
 
     private var images = intArrayOf(
         R.drawable.mcflurry,
         R.drawable.beefburger,
         R.drawable.big_mac,
-        R.drawable.fish_burger,
-        R.drawable.mcchicken,
+        R.drawable.panas_1,
+        R.drawable.panas_2,
+        R.drawable.sprite
     )
 
-    private var harga = arrayOf("Rp11.364", "Rp11.364", "Rp11.364", "Rp11.364", "Rp11.364")
+    private var harga = arrayOf("Rp11.500", "Rp14.000", "Rp34.500", "Rp45.500", "Rp46.500", "Rp8.500")
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodItemAdapter.ViewHolder {
@@ -32,7 +33,7 @@ class FoodItemAdapter: RecyclerView.Adapter<FoodItemAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: FoodItemAdapter.ViewHolder, position: Int) {
         holder.itemTitle.text = titles[position]
-        holder.itemDetail.text = details[position]
+        holder.itemResto.text = details[position]
         holder.itemImage.setImageResource(images[position])
         holder.itemHarga.text = harga[position]
     }
@@ -46,13 +47,13 @@ class FoodItemAdapter: RecyclerView.Adapter<FoodItemAdapter.ViewHolder>() {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var itemImage: ImageView
         var itemTitle: TextView
-        var itemDetail: TextView
+        var itemResto: TextView
         var itemHarga: TextView
 
         init {
             itemImage = itemView.findViewById(R.id.iv_food)
             itemTitle = itemView.findViewById(R.id.tv_makanan)
-            itemDetail = itemView.findViewById(R.id.tv_restaurant)
+            itemResto = itemView.findViewById(R.id.tv_restaurant)
             itemHarga = itemView.findViewById(R.id.tv_harga)
         }
     }

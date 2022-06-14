@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@id/tb_editpf"
         />
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ti_editpf"
+        android:id="@+id/ti_editnama"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="350dp"
         android:layout_height="60dp"
@@ -50,6 +50,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_editnama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -59,13 +60,14 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_edit"
         android:layout_width="340dp"
         android:layout_height="60dp"
         android:background="@drawable/main_button"
         android:text="Ubah Nama"
         android:textAllCaps="false"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/ti_editpf"
+        app:layout_constraintTop_toBottomOf="@id/ti_editnama"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="50dp"

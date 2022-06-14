@@ -60,8 +60,11 @@ class LoginFragment : Fragment() {
 
                 firebaseAuth.signInWithEmailAndPassword(etEmail, etPassword).addOnCompleteListener(){
                     if (it.isSuccessful){
-                        val goToHome = Intent(context, HomeActivity::class.java)
-                        startActivity(goToHome)
+                        Intent(context, HomeActivity::class.java).also { intent ->
+                            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                            startActivity(intent)
+                        }
+
                     } else{
                         Toast.makeText(context, "Incorrect username or password", Toast.LENGTH_SHORT).show()
                     }
@@ -77,9 +80,20 @@ class LoginFragment : Fragment() {
 
 
 
+
+
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if(firebaseAuth.currentUser != null){
+            Intent(context, HomeActivity::class.java).also { intent ->
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+        }
     }
 
 
 
-}
+}}
 
