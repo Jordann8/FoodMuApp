@@ -73,12 +73,12 @@
         android:text="I agree with the Terms &amp; Conditions"
         android:layout_marginTop="22dp"
         android:fontFamily="@font/poppins_regular"
-        app:layout_constraintBottom_toTopOf="@id/bt_login"
+        app:layout_constraintBottom_toTopOf="@id/bt_register"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_password" />
 
     <Button
-        android:id="@+id/bt_login"
+        android:id="@+id/bt_register"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginTop="80dp"
