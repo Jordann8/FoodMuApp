@@ -91,12 +91,14 @@
                         android:gravity="center_vertical">
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/cardView"
+                            android:id="@+id/cardViewMcd"
                             android:layout_width="350dp"
                             android:layout_height="200dp"
                             android:layout_marginHorizontal="5dp"
                             android:backgroundTint="@color/white"
-                            app:cardCornerRadius="13dp">
+                            app:cardCornerRadius="13dp"
+                            android:clickable="true"
+                            >
 
                             <RelativeLayout
                                 android:id="@+id/background"
@@ -169,7 +171,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/cardView2"
+                            android:id="@+id/cardViewBK"
                             android:layout_width="350dp"
                             android:layout_height="200dp"
                             android:layout_marginHorizontal="10dp"
