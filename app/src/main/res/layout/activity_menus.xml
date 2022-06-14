@@ -22,6 +22,7 @@
         android:id="@+id/container_menu"
         android:layout_width="match_parent"
         android:layout_height="680dp"
+        android:scrollbars="none"
         app:layout_constraintTop_toBottomOf="@+id/tb_menu">
 
         <androidx.recyclerview.widget.RecyclerView
