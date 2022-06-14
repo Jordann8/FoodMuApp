@@ -10,9 +10,9 @@ import com.example.foodmuapp.R
 
 class FoodItemAdapter: RecyclerView.Adapter<FoodItemAdapter.ViewHolder>() {
 
-    private var titles = arrayOf("McFlurry", "Burger", "Big Mac", "PaNas 1", "PaNas 2", "Sprite")
+    private var titles = arrayOf("McFlurry", "Burger", "Big Mac", "PaNas 1", "PaNas 2", "Sprite", "McSpicy")
 
-    private var details = arrayOf("McDonald's", "McDonald's", "McDonald's", "McDonald's", "McDonald's", "McDonald's")
+    private var details = arrayOf("McDonald's", "McDonald's", "McDonald's", "McDonald's", "McDonald's", "McDonald's", "McDonald's")
 
     private var images = intArrayOf(
         R.drawable.mcflurry,
@@ -20,10 +20,11 @@ class FoodItemAdapter: RecyclerView.Adapter<FoodItemAdapter.ViewHolder>() {
         R.drawable.big_mac,
         R.drawable.panas_1,
         R.drawable.panas_2,
-        R.drawable.sprite
+        R.drawable.sprite,
+        R.drawable.mcspicy
     )
 
-    private var harga = arrayOf("Rp11.500", "Rp14.000", "Rp34.500", "Rp45.500", "Rp46.500", "Rp8.500")
+    private var harga = arrayOf("Rp11.500", "Rp14.000", "Rp34.500", "Rp45.500", "Rp46.500", "Rp8.500", "Rp15.000")
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodItemAdapter.ViewHolder {
