@@ -64,9 +64,6 @@
         app:layout_constraintTop_toBottomOf="@id/et_phoneregist" />
 
 
-
-
-
     <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/checkBox1"
         android:layout_width="wrap_content"
@@ -78,8 +75,7 @@
         android:fontFamily="@font/poppins_regular"
         app:layout_constraintBottom_toTopOf="@id/bt_login"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_password"
-        />
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
 
     <Button
         android:id="@+id/bt_login"

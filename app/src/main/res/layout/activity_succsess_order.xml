@@ -52,7 +52,7 @@
         android:text="Track"
         android:background="@drawable/main_button"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/tv_succsess_desc"
         app:layout_constraintStart_toStartOf="@+id/tv_succsess_desc"
