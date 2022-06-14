@@ -33,7 +33,7 @@ class FoodItemAdapter: RecyclerView.Adapter<FoodItemAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: FoodItemAdapter.ViewHolder, position: Int) {
         holder.itemTitle.text = titles[position]
-        holder.itemDetail.text = details[position]
+        holder.itemResto.text = details[position]
         holder.itemImage.setImageResource(images[position])
         holder.itemHarga.text = harga[position]
     }
