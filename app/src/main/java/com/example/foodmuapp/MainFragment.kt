@@ -47,6 +47,8 @@ class MainFragment : Fragment() {
             startActivity(goToMCD)
 
             listMakanan = arrayListOf()
+            listMakanan = ArrayList()
+
 
 
             listMakanan.add(MakananModel("McFlurry", gambar = R.drawable.mcflurry, "Rp11.500"))

@@ -17,7 +17,7 @@ class MenusActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menus)
 
         listMakanan = arrayListOf()
-
+        listMakanan = ArrayList()
 
         listMakanan.add(MakananModel("McFlurry", gambar = R.drawable.mcflurry, "Rp11.500"))
         listMakanan.add(MakananModel("Burger", gambar = R.drawable.beefburger, "Rp14.000"))
