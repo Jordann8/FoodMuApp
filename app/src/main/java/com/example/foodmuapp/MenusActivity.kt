@@ -28,12 +28,9 @@ class MenusActivity : AppCompatActivity() {
         listMakanan = arrayListOf()
         listMakanan = ArrayList()
 
-        listMakanan.add(MakananModel("McFlurry", gambar = R.drawable.mcflurry, "Rp11.500"))
-        listMakanan.add(MakananModel("Burger", gambar = R.drawable.beefburger, "Rp14.000"))
-        listMakanan.add(MakananModel("Big Mac", gambar = R.drawable.big_mac, "Rp34.500"))
-        listMakanan.add(MakananModel("PaNas 1", gambar = R.drawable.panas_1, "Rp45.500"))
-        listMakanan.add(MakananModel("PaNas 2", gambar = R.drawable.panas_2, "Rp46.500"))
-        listMakanan.add(MakananModel("Sprite", gambar = R.drawable.sprite, "Rp8.500"))
+        listMakanan.add(MakananModel("McFlurry", gambar = R.drawable.mcflurry, "Rp11.364"))
+        listMakanan.add(MakananModel("Burger", gambar = R.drawable.beefburger, "Rp11.364"))
+        listMakanan.add(MakananModel("Big Mac", gambar = R.drawable.big_mac, "Rp22.364"))
 
         newRecyclerView = findViewById(R.id.rv_menu)
         newRecyclerView.layoutManager = LinearLayoutManager(this)
