@@ -211,7 +211,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="20/03/21"
             android:textColor="@color/grey"
-            android:textSize="11sp"
+            android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@+id/tv_comment_reviewer"
             app:layout_constraintStart_toEndOf="@+id/rating_bar_comment"
             app:layout_constraintTop_toTopOf="@+id/rating_bar_comment" />
@@ -271,7 +271,7 @@
             android:fontFamily="@font/poppins_medium"
             android:text="13/03/21"
             android:textColor="@color/grey"
-            android:textSize="11sp"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@+id/tv_reviewer_name2"
             app:layout_constraintStart_toEndOf="@+id/rating_bar_comment"
             app:layout_constraintTop_toTopOf="@+id/tv_reviewer_name2" />
@@ -279,7 +279,5 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 </ScrollView>

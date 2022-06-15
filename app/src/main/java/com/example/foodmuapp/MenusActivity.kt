@@ -7,10 +7,10 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.foodmuapp.databinding.ActivityMenusBinding
-import com.example.foodmuapp.databinding.ActivityRestaurantBinding
 import com.example.foodmuapp.home.MakananModel
 import com.example.foodmuapp.home.adapter.FoodItemAdapter
 import kotlinx.android.synthetic.main.activity_menus.*
+import javax.security.auth.callback.Callback
 
 class MenusActivity : AppCompatActivity() {
     private lateinit var listMakanan: ArrayList<MakananModel>
@@ -28,15 +28,20 @@ class MenusActivity : AppCompatActivity() {
         listMakanan = arrayListOf()
         listMakanan = ArrayList()
 
-        listMakanan.add(MakananModel("McFlurry", gambar = R.drawable.mcflurry, "Rp11.364"))
-        listMakanan.add(MakananModel("Burger", gambar = R.drawable.beefburger, "Rp11.364"))
-        listMakanan.add(MakananModel("Big Mac", gambar = R.drawable.big_mac, "Rp22.364"))
+        listMakanan.add(MakananModel("McFlurry", gambar = R.drawable.mcflurry,"Rp11.500", "McDonald's"))
+        listMakanan.add(MakananModel("Burgerr", gambar = R.drawable.beefburger, "Rp14.000", "McDonald's"))
+        listMakanan.add(MakananModel("Big Mac", gambar = R.drawable.big_mac, "Rp22.500", "McDonald's"))
+        listMakanan.add(MakananModel("PaNas 1", gambar = R.drawable.panas_1,"Rp45.500", "McDonald's"))
+        listMakanan.add(MakananModel("PaNas 2", gambar = R.drawable.panas_2,"Rp46.000", "McDonald's"))
+        listMakanan.add(MakananModel("Spritee", gambar = R.drawable.sprite,"Rp8.500", "McDonald's"))
+        listMakanan.add(MakananModel("McSpicy", gambar = R.drawable.mcspicy,"Rp15.000", "McDonald's"))
+        listMakanan.add(MakananModel("McChicken", gambar = R.drawable.mcchicken,"Rp18.000", "McDonald's"))
 
-        newRecyclerView = findViewById(R.id.rv_menu)
+        newRecyclerView = findViewById(R.id.rv_menu_plus)
         newRecyclerView.layoutManager = LinearLayoutManager(this)
         newRecyclerView.setHasFixedSize(true)
 
-        newRecyclerView.adapter = FoodItemAdapter()
+        newRecyclerView.adapter = FoodItemAdapter(this, listMakanan,)
 
         btn_order_menu.setOnClickListener {
             val listMakanan: ArrayList<MakananModel> = arrayListOf()
@@ -57,7 +62,12 @@ class MenusActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+        binding.tbMenu.setNavigationOnClickListener(){
+            val goBack = Intent(this, HomeActivity::class.java)
+            startActivity(goBack)
+        }
 
     }
+
 }
 
