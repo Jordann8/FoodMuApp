@@ -10,7 +10,6 @@ import com.example.foodmuapp.databinding.ActivityMenusBinding
 import com.example.foodmuapp.home.MakananModel
 import com.example.foodmuapp.home.adapter.FoodItemAdapter
 import kotlinx.android.synthetic.main.activity_menus.*
-import javax.security.auth.callback.Callback
 
 class MenusActivity : AppCompatActivity() {
     private lateinit var listMakanan: ArrayList<MakananModel>
