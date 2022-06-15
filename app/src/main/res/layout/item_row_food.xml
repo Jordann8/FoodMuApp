@@ -2,10 +2,11 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_food"
     android:layout_width="350dp"
     android:layout_height="130dp"
     android:layout_marginVertical="10dp"
-    android:layout_marginStart="0dp"
+    android:layout_marginStart="5dp"
     app:cardCornerRadius="13dp"
     android:backgroundTint="@color/white">
 
@@ -18,8 +19,7 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_food"
             android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginStart="10dp"
+            android:layout_height="100dp"
             android:layout_centerVertical="true"
             android:scaleType="centerCrop"
             android:src="@drawable/mcflurry" />
@@ -29,12 +29,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginVertical="20dp"
-            android:layout_marginEnd="90dp"
+            android:layout_centerHorizontal="true"
             android:fontFamily="@font/poppins_medium"
-            android:layout_alignEnd="@id/btn_back"
             android:text="McFlurry"
             android:textColor="@color/black"
-            android:textSize="21sp" />
+            android:textSize="18sp" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_restaurant"
@@ -45,7 +44,7 @@
             android:fontFamily="@font/poppins_medium"
             android:textColor="@color/grey"
             android:text="McDonald's"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
 
         <androidx.appcompat.widget.AppCompatRatingBar
             android:id="@+id/ratingBar"
@@ -66,13 +65,14 @@
             android:fontFamily="@font/poppins_semi_bold"
             android:text="Rp11.364"
             android:textColor="@color/black"
-            android:textSize="21sp" />
+            android:textSize="18sp" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btn_back"
             android:layout_width="50dp"
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
             android:layout_marginHorizontal="30dp"
             android:backgroundTint="@color/white"
             android:src="@drawable/ic_bagi" />
@@ -80,9 +80,10 @@
         <androidx.appcompat.widget.AppCompatImageButton
             android:layout_width="50dp"
             android:layout_height="40dp"
+            android:layout_marginTop="8dp"
             android:id="@+id/btn_favorite"
             android:backgroundTint="@color/white"
-            android:src="@drawable/ic_love"
+            android:src="@drawable/ic_love_border"
             android:layout_alignParentEnd="true" />
 
 
