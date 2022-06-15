@@ -14,7 +14,7 @@
         android:orientation="vertical" />
 
         <LinearLayout
-            android:id="@+id/ll_home"
+            android:id="@+id/linear_layout_home"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

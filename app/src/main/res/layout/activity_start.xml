@@ -55,6 +55,6 @@
         android:text="@string/start_button"
         android:textColor="@color/black"
         android:fontFamily="@font/poppins_semi_bold"
-        android:textSize="18sp"/>
+        android:textSize="14sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

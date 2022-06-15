@@ -8,4 +8,6 @@ class MakananModel (
     var title: String? = null,
     var gambar: Int = 0,
     var harga: String? = null
-) : Parcelable
+) : Parcelable {
+    var jumlah : Int = 0
+}
