@@ -45,7 +45,7 @@ class FoodItemAdapter(val context : Context, val listModel: ArrayList<MakananMod
             itemTitle = itemView.findViewById(R.id.tv_makanan)
             itemResto = itemView.findViewById(R.id.tv_restaurant)
             itemHarga = itemView.findViewById(R.id.tv_harga)
-            textTotal = itemView.findViewById(R.id.tv_total_makanan)
+            textTotal = itemView.findViewById(R.id.product_selectedQuantity)
 
             itemView.findViewById<ImageView>(R.id.ic_minus)
                 .setOnClickListener {
