@@ -89,7 +89,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@id/tv_restaurant_bk"
-                android:paddingVertical="8dp"
+                android:paddingVertical="7dp"
                 android:paddingLeft="17dp"
                 android:text="Fast Food Restaurant"
                 android:textSize="16sp" />
