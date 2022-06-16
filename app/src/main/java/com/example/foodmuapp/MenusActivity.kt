@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.foodmuapp.databinding.ActivityMenusBinding
 import com.example.foodmuapp.home.MakananModel
-import com.example.foodmuapp.home.MakananPlusModel
 import com.example.foodmuapp.home.adapter.FoodItemAdapter
 import kotlinx.android.synthetic.main.activity_menus.*
 
