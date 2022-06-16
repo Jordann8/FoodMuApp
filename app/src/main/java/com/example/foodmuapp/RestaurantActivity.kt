@@ -31,6 +31,11 @@ class RestaurantActivity : AppCompatActivity() {
             val goBack = Intent(this, HomeActivity::class.java)
             startActivity(goBack)
         }
+
+        binding.btMenu.setOnClickListener(){
+           val goToMenu = Intent(this, MenusActivity::class.java)
+            startActivity(goToMenu)
+        }
     }
 
 

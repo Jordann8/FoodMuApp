@@ -19,31 +19,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <EditText
-        android:id="@+id/et_search_bar"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginHorizontal="20dp"
-        android:hint="Search"
-        android:drawableStart="@drawable/ic_search"
-        android:fontFamily="@font/poppins_regular"
-        android:paddingStart="20dp"
-        android:clickable="true"
-        android:textStyle="normal"
-        android:textSize="15sp"
-        android:background="@drawable/rounded_button"
-        app:layout_constraintTop_toBottomOf="@id/tb_menu"/>
-
     <ScrollView
         android:id="@+id/container_menu"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="580dp"
         android:layout_marginTop="5dp"
         android:scrollbars="none"
-        app:layout_constraintTop_toBottomOf="@+id/et_search_bar">
+        app:layout_constraintTop_toBottomOf="@+id/tb_menu">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_menu"
+            android:id="@+id/rv_menu_plus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="20dp"
@@ -54,7 +39,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/container_menu">
 

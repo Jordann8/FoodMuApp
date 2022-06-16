@@ -45,7 +45,7 @@
                 android:id="@+id/tv_makanan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/btn_favorite"
+                android:layout_alignEnd="@id/btn_edit"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="120dp"
                 android:fontFamily="@font/poppins_medium"
@@ -87,7 +87,7 @@
                 android:textSize="21sp" />
 
             <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/btn_favorite"
+                android:id="@+id/btn_edit"
                 android:layout_width="50dp"
                 android:layout_height="40dp"
                 android:layout_alignParentEnd="true"

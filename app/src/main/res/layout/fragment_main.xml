@@ -73,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignStart="@id/hello"
                     android:text="@string/restaurant_nearby_text"
-                    android:textSize="19sp"
+                    android:textSize="18sp"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:textColor="@color/black"
                     android:layout_below="@id/et_search_bar"

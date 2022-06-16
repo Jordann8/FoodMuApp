@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.foodmuapp.databinding.FragmentMainBinding
 import com.example.foodmuapp.home.MakananModel
 import com.example.foodmuapp.home.adapter.FoodItemAdapter
+import kotlinx.android.synthetic.main.activity_login.*
 
 class MainFragment : Fragment() {
     private  var _binding: FragmentMainBinding? = null
@@ -50,18 +51,20 @@ class MainFragment : Fragment() {
         listMakanan = arrayListOf()
         listMakanan = ArrayList()
 
-        listMakanan.add(MakananModel("McFlurry", gambar = R.drawable.mcflurry, "Rp11.500"))
-        listMakanan.add(MakananModel("Burgerrr", gambar = R.drawable.beefburger, "Rp14.000"))
-        listMakanan.add(MakananModel("Big Mac", gambar = R.drawable.big_mac, "Rp34.500"))
-        listMakanan.add(MakananModel("PaNas 1", gambar = R.drawable.panas_1, "Rp45.500"))
-        listMakanan.add(MakananModel("PaNas 2", gambar = R.drawable.panas_2, "Rp46.500"))
-        listMakanan.add(MakananModel("Spritee", gambar = R.drawable.sprite, "Rp8.500"))
+        listMakanan.add(MakananModel("McFlurry", gambar = R.drawable.mcflurry,"Rp11.500", "McDonald's"))
+        listMakanan.add(MakananModel("Burgerr", gambar = R.drawable.beefburger, "Rp14.000", "McDonald's"))
+        listMakanan.add(MakananModel("Big Mac", gambar = R.drawable.big_mac, "Rp22.500", "McDonald's"))
+        listMakanan.add(MakananModel("PaNas 1", gambar = R.drawable.panas_1,"Rp45.500", "McDonald's"))
+        listMakanan.add(MakananModel("PaNas 2", gambar = R.drawable.panas_2,"Rp46.000", "McDonald's"))
+        listMakanan.add(MakananModel("Spritee", gambar = R.drawable.sprite,"Rp8.500", "McDonald's"))
+        listMakanan.add(MakananModel("McSpicy", gambar = R.drawable.mcspicy,"Rp15.000", "McDonald's"))
+        listMakanan.add(MakananModel("McChicken", gambar = R.drawable.mcchicken,"Rp18.000", "McDonald's"))
 
         newRecyclerView = binding.rvMenu
         newRecyclerView.layoutManager = LinearLayoutManager(context)
         newRecyclerView.setHasFixedSize(true)
 
-        newRecyclerView.adapter = FoodItemAdapter()
+        newRecyclerView.adapter = FoodItemAdapter(requireContext(), listMakanan)
 
     }
 
