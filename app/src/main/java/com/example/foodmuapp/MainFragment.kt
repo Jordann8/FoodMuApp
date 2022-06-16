@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.foodmuapp.databinding.FragmentMainBinding
 import com.example.foodmuapp.home.MakananModel
+import com.example.foodmuapp.home.MakananPlusModel
 import com.example.foodmuapp.home.adapter.FoodItemAdapter
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -17,7 +18,7 @@ class MainFragment : Fragment() {
     private  var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var listMakanan: ArrayList<MakananModel>
+    private lateinit var listMakananPlus: ArrayList<MakananPlusModel>
     private lateinit var newRecyclerView: RecyclerView
 
 
@@ -48,23 +49,23 @@ class MainFragment : Fragment() {
         }
 
 
-        listMakanan = arrayListOf()
-        listMakanan = ArrayList()
+        listMakananPlus = arrayListOf()
+        listMakananPlus = ArrayList()
 
-        listMakanan.add(MakananModel("McFlurry", gambar = R.drawable.mcflurry,"Rp11.500", "McDonald's"))
-        listMakanan.add(MakananModel("Burgerr", gambar = R.drawable.beefburger, "Rp14.000", "McDonald's"))
-        listMakanan.add(MakananModel("Big Mac", gambar = R.drawable.big_mac, "Rp22.500", "McDonald's"))
-        listMakanan.add(MakananModel("PaNas 1", gambar = R.drawable.panas_1,"Rp45.500", "McDonald's"))
-        listMakanan.add(MakananModel("PaNas 2", gambar = R.drawable.panas_2,"Rp46.000", "McDonald's"))
-        listMakanan.add(MakananModel("Spritee", gambar = R.drawable.sprite,"Rp8.500", "McDonald's"))
-        listMakanan.add(MakananModel("McSpicy", gambar = R.drawable.mcspicy,"Rp15.000", "McDonald's"))
-        listMakanan.add(MakananModel("McChicken", gambar = R.drawable.mcchicken,"Rp18.000", "McDonald's"))
+        listMakananPlus.add(MakananPlusModel("McFlurry", R.drawable.mcflurry,"Rp11.500", "McDonald's"))
+        listMakananPlus.add(MakananPlusModel("Burgerr", R.drawable.beefburger, "Rp14.000", "McDonald's"))
+        listMakananPlus.add(MakananPlusModel("Big Mac", R.drawable.big_mac, "Rp22.500", "McDonald's"))
+        listMakananPlus.add(MakananPlusModel("PaNas 1", R.drawable.panas_1,"Rp45.500", "McDonald's"))
+        listMakananPlus.add(MakananPlusModel("PaNas 2", R.drawable.panas_2,"Rp46.000", "McDonald's"))
+        listMakananPlus.add(MakananPlusModel("Spritee", R.drawable.sprite,"Rp8.500", "McDonald's"))
+        listMakananPlus.add(MakananPlusModel("McSpicy", R.drawable.mcspicy,"Rp15.000", "McDonald's"))
+        listMakananPlus.add(MakananPlusModel("McChicken", R.drawable.mcchicken,"Rp18.000", "McDonald's"))
 
         newRecyclerView = binding.rvMenu
         newRecyclerView.layoutManager = LinearLayoutManager(context)
         newRecyclerView.setHasFixedSize(true)
 
-        newRecyclerView.adapter = FoodItemAdapter(requireContext(), listMakanan)
+        newRecyclerView.adapter = FoodItemAdapter(requireContext(), listMakananPlus)
 
     }
 

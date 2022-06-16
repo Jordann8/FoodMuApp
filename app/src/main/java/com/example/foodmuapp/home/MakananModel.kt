@@ -7,7 +7,7 @@ import kotlinx.android.parcel.Parcelize
 class MakananModel (
     var title: String? = null,
     var gambar: Int = 0,
-    var harga: String? = null,
+    var harga: Long,
     var resto: String? = null
 ) : Parcelable {
     var jumlah : Int = 0
