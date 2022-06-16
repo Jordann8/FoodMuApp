@@ -10,24 +10,25 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
+
 
         <com.denzcoskun.imageslider.ImageSlider
-            app:iss_unselected_dot="@drawable/is_notselected"
-            app:iss_selected_dot="@drawable/is_selected"
-            android:id="@+id/is_header"
+            android:id="@+id/is_header_bk"
             android:layout_width="fill_parent"
             android:layout_height="450dp"
             app:iss_corner_radius="5"
             app:iss_period="500"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:iss_selected_dot="@drawable/is_selected"
+            app:iss_unselected_dot="@drawable/is_notselected"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:id="@+id/bt_back"
+            android:id="@+id/bt_back_bk"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/bg_button_circle"
@@ -57,13 +58,14 @@
             android:paddingTop="1dp"/>
 
         <RelativeLayout
-            android:id="@+id/rlDesc"
+            android:id="@+id/rl_desc_bk"
             android:layout_width="fill_parent"
-            android:layout_height="350dp"
+            android:layout_height="335dp"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="@id/is_header"
-            app:layout_constraintRight_toRightOf="@id/is_header"
-            app:layout_constraintTop_toBottomOf="@id/is_header">
+            app:layout_constraintLeft_toLeftOf="@id/is_header_bk"
+            app:layout_constraintRight_toRightOf="@id/is_header_bk"
+
+            app:layout_constraintTop_toBottomOf="@id/is_header_bk">
 
             <LinearLayout
                 android:layout_width="200dp"
@@ -72,34 +74,34 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_restaurant"
+                android:id="@+id/tv_restaurant_bk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
-                android:padding="20dp"
+                android:padding="16dp"
                 android:text="Burger King"
                 android:textColor="@color/black"
                 android:textSize="28sp" />
 
             <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_desc_restaurant"
+                android:id="@+id/tv_desc_restaurant_bk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/tv_restaurant"
+                android:layout_alignBottom="@id/tv_restaurant_bk"
                 android:paddingVertical="8dp"
-                android:paddingStart="20dp"
+                android:paddingLeft="17dp"
                 android:text="Fast Food Restaurant"
                 android:textSize="16sp" />
 
             <RatingBar
-                android:id="@+id/ratingBar"
+                android:id="@+id/rating_bar_bk"
                 style="@style/Widget.AppCompat.RatingBar.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/tv_desc_restaurant"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="33dp"
+                android:layout_alignTop="@id/tv_desc_restaurant_bk"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
                 android:progressTint="#FDCC4C"
                 android:rating="5" />
 
@@ -107,44 +109,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppins_medium"
-                android:layout_marginTop="30dp"
+                android:paddingTop="25dp"
                 android:text="Open 24 hours"
                 android:textColor="@color/black"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/tv_desc"
+                android:id="@+id/tv_desc_bk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@id/tv_desc_restaurant"
+                android:layout_alignTop="@id/tv_desc_restaurant_bk"
                 android:layout_marginTop="50sp"
                 android:fontFamily="@font/poppins_medium"
-                android:paddingStart="20sp"
-                android:paddingEnd="30sp"
+                android:paddingLeft="16sp"
+                android:paddingRight="80sp"
                 android:text="Founded in 1954, Burger King is the second largest fast food hamburger chain in the world"
-                android:textSize="12sp" />
+                android:textSize="16sp" />
 
             <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/btn_keranjang"
+                android:id="@+id/btn_keranjang_bk"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_alignEnd="@id/buttonPanel"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="100dp"
-                android:layout_below="@id/tv_desc"
+                android:layout_above="@+id/btn_panel_bk"
+                android:layout_alignEnd="@id/btn_panel_bk"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="-160dp"
                 android:background="@drawable/bg_keranjang_btn"
                 android:elevation="5dp"
                 android:paddingStart="2dp"
                 android:src="@drawable/ic_cart" />
 
             <LinearLayout
-                android:id="@+id/buttonPanel"
+                android:id="@+id/btn_panel_bk"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
-                android:layout_alignTop="@id/tv_desc_restaurant"
+                android:layout_alignTop="@id/tv_desc_restaurant_bk"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="170dp"
                 android:gravity="center_vertical"
@@ -167,7 +169,7 @@
                     app:iconTint="@color/black" />
 
                 <Button
-                    android:id="@+id/btMenu"
+                    android:id="@+id/btn_menu_bk"
                     android:layout_width="270dp"
                     android:layout_height="60dp"
                     android:background="@drawable/main_button"
@@ -180,12 +182,12 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/tv_revuew"
+                android:id="@+id/tv_review_bk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@id/buttonPanel"
-                android:layout_alignBottom="@id/buttonPanel"
-                android:layout_marginBottom="-30dp"
+                android:layout_alignStart="@id/btn_panel_bk"
+                android:layout_alignBottom="@id/btn_panel_bk"
+                android:layout_marginBottom="-20dp"
                 android:fontFamily="@font/poppins_medium"
                 android:text="Review"
                 android:textColor="@color/black" />
@@ -197,60 +199,59 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginEnd="55dp"
-            android:layout_marginTop="10dp"
-            app:layout_constraintLeft_toLeftOf="@id/rlDesc"
+            app:layout_constraintLeft_toLeftOf="@id/rl_desc_bk"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/rlDesc" >
+            app:layout_constraintTop_toBottomOf="@id/rl_desc_bk" >
 
             <ImageView
-                android:id="@+id/ic_profile"
+                android:id="@+id/ic_profile_bk"
                 android:layout_width="30dp"
                 android:layout_height="fill_parent"
                 android:src="@drawable/ic_person" />
 
 
             <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/ll_displayname"
-                android:gravity="center_vertical"
+                android:id="@+id/ll_displayname_bk"
                 android:layout_width="260dp"
                 android:layout_height="25dp"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="30dp">
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical">
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@id/ic_profile"
+                    android:layout_alignLeft="@id/ic_profile_bk"
                     android:layout_alignParentStart="true"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Pitri"
+                    android:text="Doi"
                     android:textColor="@color/black" />
 
                 <RatingBar
-                    android:id="@+id/rating_bar"
+                    android:id="@+id/rating_bar_b"
                     style="@style/Widget.AppCompat.RatingBar.Small"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
                     android:progressTint="#FDCC4C"
-                    android:rating="5"
-                    android:layout_marginStart="3dp" />
+                    android:rating="5" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <LinearLayout
                 android:layout_width="260dp"
                 android:layout_height="20dp"
-                android:layout_alignStart="@id/ic_profile"
+                android:layout_alignLeft="@id/ic_profile_bk"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="25dp"
-                android:layout_toEndOf="@+id/ic_profile">
+                android:layout_toEndOf="@+id/ic_profile_bk">
 
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tv_comment"
+                    android:id="@+id/tv_comment_bk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="“suka banget deh ama ni restoran”"
+                    android:text="“suka banget deh ama burgernya”"
                     android:fontFamily="@font/poppins_medium"
                     android:textSize="12sp" />
 
@@ -259,7 +260,7 @@
             <LinearLayout
                 android:layout_width="60dp"
                 android:layout_height="20dp"
-                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:gravity="center">
 
 
@@ -271,9 +272,6 @@
                     android:textSize="11sp" />
 
             </LinearLayout>
-
         </RelativeLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
